@@ -1,0 +1,27 @@
+[
+        [
+            "name" : "CustomLogTask",
+            "displayName" : "CustomLogTask",
+            "category" : "customlog",
+            "description" : "",
+            "defaultHandler" : "mvel: new com.corp.concepts.process.automation.handler.log.LogTaskWorkItemHandler()",
+            "documentation" : "log/index.html",
+
+            "parameters" : [
+                                "prettyPrint" : new StringDataType()
+                ,"dataToLog" : new StringDataType()
+
+            ],
+            "results" : [
+                                "data" : new StringDataType()
+
+            ],
+            "mavenDependencies" : [
+                                 "com.corp.concepts.process.automation.handler:customlog:7.39.0.Final-redhat-00005"
+
+            ],
+            "icon" : "icon.png"
+
+        ]
+
+]

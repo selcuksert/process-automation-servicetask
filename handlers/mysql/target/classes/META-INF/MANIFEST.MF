@@ -1,0 +1,23 @@
+Manifest-Version: 1.0
+Built-By: S_SERT1
+Build-Jdk: 14.0.2
+Specification-Title: mysql
+Specification-Version: 7.39
+Specification-Vendor: The Corp
+Implementation-Title: mysql
+Implementation-Version: 7.39.0.Final-redhat-00005
+Implementation-Vendor-Id: com.corp.concepts.process.automation.handler
+Implementation-Vendor: The Corp
+Automatic-Module-Name: 
+Created-By: Maven Integration for Eclipse
+Implementation-URL: http://www.kiegroup.org/workitems/mysql
+Java-Vendor: Oracle Corporation
+Java-Version: 14.0.2
+Os-Arch: amd64
+Os-Name: Windows 10
+Os-Version: 10.0
+Scm-Connection: scm:git:https://github.com/kiegroup/jbpm-work-items.git/
+ mysql
+Scm-Revision: 
+Scm-Url: https://github.com/kiegroup/jbpm-work-items/mysql
+

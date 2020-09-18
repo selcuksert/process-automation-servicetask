@@ -1,0 +1,46 @@
+{
+        "name" : "CustomLogTask",
+        "displayName" : "CustomLogTask",
+        "defaultHandler" : "mvel: new com.corp.concepts.process.automation.handler.log.LogTaskWorkItemHandler()",
+        "documentation" : "log/index.html",
+        "module" : "customlog",
+        "icon" : "icon.png",
+            "category" : "customlog",
+            "description" : "A custom logger task",
+            "keywords" : [
+                                "Log"
+                ,"Slf4j"
+
+            ],
+                "isaction" : "true",
+                "actiontitle" : "Log ServiceTask",
+            "requiresauth" : "false",
+            "parameters" : [
+                                   {
+                                       "name" : "prettyPrint",
+                                       "type" : "new StringDataType()"
+                                   }
+                ,{
+                                       "name" : "dataToLog",
+                                       "type" : "new StringDataType()"
+                                   }
+
+            ],
+            "results" : [
+                                   {
+                                       "name" : "data",
+                                       "type" : "new StringDataType()"
+                                   }
+
+            ],
+            "mavenDependencies" : [
+                                   {
+                                       "groupId" : "com.corp.concepts.process.automation.handler",
+                                       "artifactId" : "customlog",
+                                       "version" : "7.39.0.Final-redhat-00005"
+                                   }
+
+            ]
+}
+
+,

@@ -1,0 +1,127 @@
+<html>
+    <head>
+    <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+    </head>
+    <body>
+    <div class="container">
+        <a name="CustomLogTask"></a><div class="card">
+                <div class="card-header"><b>1. CustomLogTask Workitem Handler</b></div>
+                <div class="card-body">
+        <table class="table table-hover">
+            <thead>
+            <tr>
+                <th>Name</th>
+                <th>Display Name</th>
+                <th>Category</th>
+                <th>Description</th>
+                <th>Handler</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>CustomLogTask</td>
+                <td>CustomLogTask</td>
+                <td>customlog</td>
+                <td></td>
+                <td>mvel: new com.corp.concepts.process.automation.handler.log.LogTaskWorkItemHandler()</td>
+            </tr>
+            </tbody>
+        </table>
+        <br/>
+        <b>Parameters</b>
+        <table class="table table-hover">
+            <thead>
+            <tr>
+                <th>Name</th>
+                <th>Type</th>
+                <th>Required</th>
+            </tr>
+            </thead>
+            <tbody>
+                    <tr>
+                        <td>prettyPrint</td>
+                        <td>new StringDataType()</td>
+                        <td>false</td>
+                    </tr>
+                    <tr>
+                        <td>dataToLog</td>
+                        <td>new StringDataType()</td>
+                        <td>false</td>
+                    </tr>
+
+            </tbody>
+        </table>
+        <br/>
+        <b>Results</b>
+        <table class="table table-hover">
+            <thead>
+            <tr>
+                <th>Name</th>
+                <th>Type</th>
+            </tr>
+            </thead>
+            <tbody>
+                    <tr>
+                        <td>data</td>
+                        <td>new StringDataType()</td>
+                    </tr>
+
+            </tbody>
+        </table>
+        <br/>
+        <b>Maven Dependencies</b>
+        <table class="table table-hover">
+            <thead>
+            <tr>
+                <th>Group</th>
+                <th>Artifact</th>
+                <th>Version</th>
+            </tr>
+            </thead>
+            <tbody>
+                    <tr>
+                        <td>com.corp.concepts.process.automation.handler</td>
+                        <td>customlog</td>
+                        <td>7.39.0.Final-redhat-00005</td>
+                    </tr>
+
+            </tbody>
+        </table>
+        <br/>
+            <b>Authentication Information</b>
+            <table class="table table-hover">
+                <thead>
+                <tr>
+                    <th>Auth Required</th>
+                    <th>Params</th>
+                    <th>Params Description</th>
+                    <th>Reference Site</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>false</td>
+                    <td>
+                    <br/>
+
+                    </td>
+                    <td>
+                    <br>
+
+                    </td>
+                    <td></td>
+                 </tr>
+                 </tbody>
+            </table>
+            <br/>
+        </div></div><p/>
+
+    </div>
+    </body>
+</html>

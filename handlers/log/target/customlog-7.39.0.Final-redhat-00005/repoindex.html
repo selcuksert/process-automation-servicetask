@@ -1,0 +1,64 @@
+<tr class="accordion-toggle" id="customlog-maintr">
+    <td><a href="#customlog-expdiv" data-toggle="collapse"><img src="customlog/icon.png" width="40" height="40">&nbsp;<b>log</b></a></td>
+    <td><button type="button" class="btn btn-primary"><span class="badge">1</span></button></td>
+    <td>A custom logger task</td>
+    <td>
+    <div class="dropdown">
+      <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton-customlog" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        <span class="fa fa-download">&nbsp;Select</span>
+      </button>
+        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton-customlog">
+            <a class="dropdown-item" href="customlog/customlog.wid"><span class="fa fa-file">&nbsp;Workitem Definition MVEL</span></a>
+            <a class="dropdown-item" href="customlog/kie-deployment-descriptor.xml"><span class="fa fa-file">&nbsp;Kie Deployment Descriptor</span></a>
+            <a class="dropdown-item" href="customlog/customlog-7.39.0.Final-redhat-00005.jar"><span class="fa fa-file">&nbsp;Workitem Jar</span></a>
+            <a class="dropdown-item" href="customlog/customlog.bpmn2"><span class="fa fa-file">&nbsp;Sample BPMN2 Process</span></a>
+        </div>
+    </div>
+    </td>
+    <td>
+    <div class="dropdown">
+          <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownInstallButton-customlog" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <span class="fa fa-cogs">&nbsp;Select</span>
+          </button>
+            <div class="dropdown-menu" aria-labelledby="dropdownInstallButton-customlog">
+                <a class="dropdown-item" data-toggle="modal" data-target="#installToWorkbenchModal" data-workitem-group="customlog" data-workitem-name="log"
+                data-workitem-handlers="CustomLogTask"><span class="fa fa-file">&nbsp;KIE Workbench</span></a>
+            </div>
+        </div>
+    </td>
+</tr>
+<tr id="customlog-exptr">
+    <td colspan="12" class="hiddenRow"><div id="customlog-expdiv" class="accordian-body collapse">
+       <table class="table table-sm">
+       <tbody>
+       <tr><td>
+
+            <table class="table table-sm">
+              <thead>
+                <tr>
+                  <th scope="col">#</th>
+                  <th scope="col">Name</th>
+                  <th scope="col">Handler</th>
+                  <th scope="col">Wid</th>
+                  <th scope="col">Auth Required</th>
+                  <th scope="col">Docs</th>
+                </tr>
+              </thead>
+              <tbody>
+                           <tr>
+                                 <th scope="row">1</th>
+                                 <td>CustomLogTask</td>
+                                 <td>mvel: new com.corp.concepts.process.automation.handler.log.LogTaskWorkItemHandler()</td>
+                                 <td><a href="customlog/CustomLogTask.wid">CustomLogTask.wid</a></td>
+                                 <td>false</td>
+                                 <td><a href="customlog/index.html#CustomLogTask" class="btn btn-secondary btn-sm" role="button" aria-disabled="true"><span class="fa fa-eye">&nbsp;View</span></a></td>
+                               </tr>
+
+               </tbody>
+               </table>
+
+       </td></tr>
+        </tbody>
+       </table></div>
+    </td>
+</tr>

@@ -1,0 +1,1430 @@
+{
+  "version" : "1.0.1",
+  "name" : "customlog",
+  "number" : "1600442463756",
+  "type" : "MAVEN",
+  "buildAgent" : {
+    "name" : "Maven",
+    "version" : "3.6.1"
+  },
+  "agent" : {
+    "name" : "Maven",
+    "version" : "3.6.1"
+  },
+  "started" : "2020-09-18T18:21:23.918+0300",
+  "durationMillis" : 50069,
+  "vcs" : [ ],
+  "licenseControl" : {
+    "runChecks" : false,
+    "includePublishedArtifacts" : false,
+    "autoDiscover" : false,
+    "scopesList" : "",
+    "licenseViolationsRecipientsList" : ""
+  },
+  "modules" : [ {
+    "properties" : {
+      "version.apache.commons.io" : "2.5",
+      "parsedVersion.osgiVersion" : "7.39.0.Final-redhat-00005",
+      "version.org.jboss.spec.javax.interceptor.jboss-interceptors-api_1.2_spec" : "1.0.1.Final-redhat-1",
+      "version.javax.persistence-api" : "2.2.0.redhat-1",
+      "version.org.apache.commons.dbcp2" : "2.1.1",
+      "version.org.jboss.shrinkwrap.resolver" : "2.2.0",
+      "version.gpg.plugin" : "1.6",
+      "version.google.translate" : "1.30.0",
+      "version.antrun.plugin" : "1.8",
+      "version.javax.xml.stream.stax" : "1.0-2",
+      "version.org.jboss.spec.javax.security.jacc.jboss-jacc-api_1.5_spec" : "1.0.2.Final-redhat-1",
+      "version.org.springframework.boot" : "2.2.6.RELEASE",
+      "version.org.apache.maven.plugins.dependency" : "3.0.2",
+      "parsedVersion.minorVersion" : "39",
+      "version.org.xhtmlrenderer" : "9.1.15",
+      "version.github.jnr" : "0.15",
+      "version.javax.annotation-api" : "1.3.2.redhat-00001",
+      "version.ear.plugin" : "3.0.1",
+      "version.xml-apis-ext" : "1.3.04",
+      "version.arquillian-cube" : "1.0.0.Alpha15",
+      "maven.compiler.argument.testSource" : "1.8",
+      "version.org.apache.commons.exec" : "1.3",
+      "version.org.glassfish" : "3.1.2",
+      "version.org.jvnet.jaxb2.maven2.maven-jaxb2-plugin" : "0.14.0",
+      "version.install.plugin" : "2.5.2",
+      "version.org.hsqldb" : "2.3.0",
+      "version.yarn" : "v1.22.4",
+      "parsedVersion.majorVersion" : "7",
+      "version.shade.plugin" : "3.1.1",
+      "version.org.apache.commons.compress" : "1.19.0.redhat-00001",
+      "version.jaxen" : "1.1.6.redhat-2",
+      "version.org.wildfly" : "19.1.0.Final",
+      "version.org.codehaus.jackson" : "1.9.13.redhat-00007",
+      "version.site.plugin" : "3.7.1",
+      "formattedVersion.nextIncrementalVersion" : "01",
+      "maven.compiler.argument.testTarget" : "1.8",
+      "version.org.codehaus.btm" : "2.1.4",
+      "version.org.jboss.weld.weld" : "2.4.1.Final-redhat-1",
+      "version.org.gwtbootstrap3-extras" : "1.0.2",
+      "version.javax.mail" : "1.4.5.redhat-2",
+      "version.javax.jws" : "1.0.0.MR1-redhat-8",
+      "version.injection.plugin" : "1.0.2",
+      "version.org.postgresql" : "42.2.12.redhat-00002",
+      "checkstyle.logViolationsToConsole" : "true",
+      "version.plexus.archiver" : "3.6.0",
+      "gwt.user.agent.all" : "gecko1_8,safari",
+      "version.org.codehaus.groovy" : "2.0.5",
+      "version.jetty" : "8.1.17.v20150415",
+      "jdk.min.version" : "1.8",
+      "checkstyle.header.extensions" : "java",
+      "version.org.infinispan" : "9.4.16.Final-redhat-00003",
+      "version.maven.embedder" : "3.3.3.redhat-1",
+      "version.net.openhft.chronicle-core" : "1.16.16",
+      "version.com.wordnik.swagger" : "1.3.10",
+      "version.com.fasterxml.jackson" : "2.10.4",
+      "version.org.roboguice" : "3.0.1",
+      "version.rar.plugin" : "2.4",
+      "version.org.json" : "20090211",
+      "version.org.ops4j.pax.exam" : "4.11.0",
+      "version.xml-apis" : "1.4.01",
+      "version.org.apache.neethi" : "3.1.1.redhat-1",
+      "version.google.guava" : "14.0.1.redhat-1",
+      "version.com.google.testing.compile" : "0.11",
+      "parsedVersion.nextMinorVersion" : "40",
+      "version.org.eclipse.sisu" : "0.3.2.redhat-00002",
+      "formattedVersion.incrementalVersion" : "00",
+      "version.org.yaml.snakeyaml" : "1.26.0.redhat-00001",
+      "version.org.jboss.spec.javax.websocket" : "1.1.3.Final-redhat-1",
+      "version.wsdl4j" : "1.6.3.redhat-2",
+      "version.jslack" : "1.1.4",
+      "version.org.jboss.spec.javax.jms.jboss-jms-api_2.0_spec" : "1.0.2.Final-redhat-1",
+      "version.org.drools.droolsjbpm-tools" : "7.39.0.Final-redhat-00005",
+      "version.org.apache.commons.ssl" : "0.3.9",
+      "version.com.google.guava" : "25.0-jre",
+      "jboss.releases.repo.url" : "https://repository.jboss.org/nexus/service/local/staging/deploy/maven2/",
+      "arguments" : "-Pjboss-release",
+      "parsedVersion.nextMajorVersion" : "8",
+      "enforcer.failOnDuplicatedClasses" : "true",
+      "version.org.codehaus.plexus.plexus-classworlds" : "2.5.2.redhat-2",
+      "version.org.sonatype.plexus.plexus-sec-dispatcher" : "1.3.0.redhat-1",
+      "version.org.eclipse.yasson" : "1.0.6.redhat-00001",
+      "version.org.keycloak" : "9.0.3.redhat-00002",
+      "version.resources.plugin" : "3.1.0",
+      "version.ch.qos.logback" : "1.2.3.redhat-00001",
+      "version.com.google.gwt" : "2.8.2",
+      "project.reporting.outputEncoding" : "UTF-8",
+      "sourceReleaseAssemblyDescriptor" : "source-release",
+      "version.dependency.plugin" : "3.1.1",
+      "version.org.apache.commons.csv" : "1.6",
+      "it.test" : "",
+      "version.org.gwtbootstrap3" : "1.0.1",
+      "version.org.jboss.arquillian.graphene" : "2.3.2",
+      "version.org.assertj" : "3.14.0",
+      "version.org.jboss.spec.javax.servlet.jsp.jboss-jsp-api_2.3_spec" : "1.0.3.Final-redhat-1",
+      "version.cobertura.plugin" : "2.7",
+      "version.postgresql" : "8.4-702.jdbc4",
+      "version.org.apache.deltaspike.core" : "1.5.1",
+      "version.org.jboss.resteasy" : "3.9.3.SP1-redhat-00001",
+      "version.org.wildfly.arquillian" : "2.2.0.Final",
+      "version.org.optaplanner" : "7.39.0.Final-redhat-00005",
+      "version.org.apache.httpcomponents.httpclient" : "4.5.4.redhat-00001",
+      "version.com.sun.xml.bind" : "2.3.0.redhat-1",
+      "version.org.apache.camel" : "2.24.0",
+      "version.jacoco.plugin" : "0.8.5",
+      "version.org.subethamail" : "1.2",
+      "version.com.ahome-it.lienzo.tooling.common" : "1.0.190-RELEASE",
+      "version.org.eclipse.emf" : "2.6.0.v20100614-1136",
+      "version.org.jboss.arquillian.selenium" : "3.13.0",
+      "version.simple-jndi" : "0.11.4.1",
+      "revapi.newKieVersion" : "7.39.0.Final-redhat-00005",
+      "version.org.javassist-4ee7" : "3.20.0-GA",
+      "version.org.osgi" : "4.3.1",
+      "version.org.mvel" : "2.4.8.Final-redhat-00001",
+      "version.org.apache.maven" : "3.3.9.redhat-2",
+      "targetJdk" : "1.8",
+      "version.org.jboss.spec.javax.ejb.jboss-ejb-api_3.2_spec" : "1.0.1.Final-redhat-1",
+      "version.org.ocpsoft.prettytime" : "3.0.2.Final",
+      "version.org.codehaus.plexus.plexus-utils" : "3.0.22",
+      "version.json" : "20140107",
+      "version.docker-java" : "3.0.14",
+      "version.org.sonatype.aether" : "1.13.1",
+      "version.org.jfree.jfreechart" : "1.5.0",
+      "version.mariadb-java-client" : "1.3.4",
+      "version.com.google.android" : "4.1.1.4",
+      "version.org.jboss.byteman" : "3.0.1",
+      "version.javancss.plugin" : "2.1",
+      "version.org.apache.commons.math3" : "3.4.1.redhat-3",
+      "version.com.google.jsinterop.base" : "1.0.0-RC1",
+      "version.org.hibernate.validator" : "6.0.18.Final",
+      "version.commons-configuration" : "1.6.0.redhat-4",
+      "version.io.netty" : "4.1.46.Final",
+      "version.deploy.plugin" : "2.8.2",
+      "version.xpp3" : "1.2.0.redhat-00001",
+      "version.org.jasypt.jasypt" : "1.9.2.redhat-1",
+      "version.org.codehaus.plexus.plexus-containers" : "1.6.0.redhat-2",
+      "version.org.drools.droolsjbpm-integration" : "7.39.0.Final-redhat-00005",
+      "version.owm" : "2.5.2.2",
+      "version.com.miglayout" : "3.7.4",
+      "version.org.drools" : "7.39.0.Final-redhat-00005",
+      "gwt.compiler.localWorkers" : "1",
+      "org.kie.productized" : "false",
+      "checkstyle.failOnViolation" : "true",
+      "version.exec.plugin" : "1.6.0",
+      "version.commons-fileupload" : "1.3.3",
+      "version.org.kie.gwthelper.maven" : "1.3",
+      "version.com.thoughtworks.xstream" : "1.4.11.1-redhat-00001",
+      "version.org.geronimo.atinject" : "1.0.0.redhat-1",
+      "version.org.glassfish.jakarta" : "1.1.6.redhat-00002",
+      "formattedVersion.nextMinorVersion" : "40",
+      "version.vimeo" : "1.10",
+      "maven.min.version" : "3.5.2",
+      "version.io.undertow" : "2.0.28.Final-redhat-00001",
+      "maven.compiler.testSource" : "1.8",
+      "version.xalan" : "2.7.1.redhat-12",
+      "version.docker-client" : "3.5.12",
+      "version.com.google.elemental2" : "1.0.0-RC1",
+      "version.release.plugin" : "2.5.3",
+      "version.org.eclipse.jdt" : "3.19.0",
+      "project.build.sourceEncoding" : "UTF-8",
+      "version.org.wildfly.security" : "1.10.4.Final-redhat-00001",
+      "version.org.owasp.encoder" : "1.2",
+      "version.xmlunit" : "1.3-redhat-2",
+      "version.org.jboss.spec.javax.annotation.jboss-annotations-api_1.2_spec" : "1.0.0.Final-redhat-1",
+      "version.org.jboss.spec.javax.xml.ws.jboss-jaxws-api_2.3_spec" : "1.0.0.Final-redhat-1",
+      "version.google.maps" : "0.9.0",
+      "version.kafka" : "1.1.0",
+      "maven.compiler.testTarget" : "1.8",
+      "version.org.jboss.jboss-msc" : "1.4.11.Final-redhat-00001",
+      "version.org.apache.ftpserver" : "1.0.6",
+      "formattedVersion.nextMajorVersion" : "08",
+      "version.thorntail" : "2.7.0.Final-redhat-00003",
+      "version.com.android-dx" : "1.10",
+      "version.org.powermock" : "1.7.4",
+      "version.atlassian.jira" : "1.0",
+      "version.org.subethamail.subethasmtp" : "3.1.6",
+      "version.node" : "v12.16.2",
+      "version.com.fasterxml.jackson.databind" : "2.10.4",
+      "version.surefire.plugin" : "2.22.1",
+      "osgi.snapshot.qualifier" : "202009181521",
+      "version.com.lowagie.itext" : "2.1.7",
+      "version.commons-beanutils" : "1.9.4.redhat-00002",
+      "version.commons-net" : "2.2",
+      "version.org.jbpm" : "7.39.0.Final-redhat-00005",
+      "version.org.antlr4" : "4.8",
+      "checkstyle.header.template" : "^\\/\\*$\\n^\n\\* Copyright \\d\\d\\d\\d Red Hat, Inc\\. and\\/or its affiliates\\.$\\n^\n\\*$\\n^\n\\* Licensed under the Apache License, Version 2\\.0 \\(the &quot;License&quot;\\);$\\n^\n\\* you may not use this file except in compliance with the License\\.$\\n^\n\\* You may obtain a copy of the License at$\\n^\n\\*$\\n^\n\\*     http:\\/\\/www\\.apache\\.org\\/licenses\\/LICENSE-2\\.0$\\n^\n\\*$\\n^\n\\* Unless required by applicable law or agreed to in writing, software$\\n^\n\\* distributed under the License is distributed on an &quot;AS IS&quot; BASIS,$\\n^\n\\* WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied\\.$\\n^\n\\* See the License for the specific language governing permissions and$\\n^\n\\* limitations under the License\\.$\\n^\n\\*\\/$",
+      "maven.compiler.source" : "1.8",
+      "version.org.apache.commons.pool2" : "2.4.2",
+      "version.org.apache.xmlgraphics.batik" : "1.9.1",
+      "version.org.eclipse.jetty" : "9.2.14.v20151106",
+      "buildNumber" : "485c2a430db1bb94c39c24336a40c8f981e1d783",
+      "timestamp" : "1600442485049",
+      "version.bundle.plugin" : "3.5.0",
+      "version.archetype.plugin" : "3.0.1",
+      "version.web3j" : "3.3.1",
+      "version.javax.validation" : "2.0.1.Final-redhat-1",
+      "maven.compiler.target" : "1.8",
+      "version.org.antlr.ST4" : "4.0.7",
+      "version.org.hisrc.jsonix.jsonix-scripts" : "3.0.0",
+      "version.org.apache.abdera" : "1.1.3-redhat-1",
+      "version.org.apache.tomcat" : "6.0.32",
+      "version.kubernetes-client" : "4.6.0",
+      "version.org.springframework.osgi" : "1.2.1",
+      "version.com.fasterxml.jackson.annotations" : "2.9.10",
+      "version.io.springfox" : "2.9.2",
+      "version.org.mozilla.rhino" : "1.7R4",
+      "version.joda-time" : "2.9.7.redhat-1",
+      "version.org.apache.ant" : "1.8.4-redhat-1",
+      "version.com.google.jsinterop.annotations" : "1.0.2",
+      "version.log4j" : "1.2.17.redhat-3",
+      "version.org.ops4j.pax.url" : "2.2.0",
+      "version.twitter4j" : "4.0.6",
+      "version.license.plugin" : "1.16",
+      "version.assembly.plugin" : "3.1.0",
+      "version.org.apache.chemistry.opencmis" : "0.11.0",
+      "version.link.bek.tools.issue-keeper-junit" : "4.11.1",
+      "version.org.jboss.arquillian.extension.drone" : "2.5.1",
+      "version.io.takari.maven.plugins.testing" : "2.9.2",
+      "version.com.github.tomakehurst.wiremock" : "1.53",
+      "version.org.wildfly.common" : "1.5.1.Final-redhat-00001",
+      "spotbugs.failOnViolation" : "true",
+      "version.org.apache.aries.blueprint.noosgi" : "1.1.1",
+      "version.org.jboss.xnio" : "3.7.7.Final-redhat-00001",
+      "version.pmd.plugin" : "3.10.0",
+      "version.xerces" : "2.12.0.SP02-redhat-00001",
+      "version.org.codehaus.plexus.plexus-io" : "3.0.0",
+      "version.org.apache.aries.blueprint.api" : "1.0.1.redhat-611412",
+      "version.org.webjars.swagger-ui" : "2.2.10",
+      "version.net.openhft.chronicle-queue" : "5.16.10",
+      "version.antlr" : "2.7.7.redhat-7",
+      "version.org.sonatype.plexus.plexus-cipher" : "1.7.0.redhat-1",
+      "version.help.plugin" : "3.1.0",
+      "version.commons-digester" : "1.8",
+      "version.org.apache.maven.shared.maven-artifact-transfer" : "0.9.1",
+      "useReleaseProfile" : "false",
+      "version.plugin.plugin" : "3.5.2",
+      "version.org.codehaus.jettison" : "1.4.0.redhat-00001",
+      "latestReleasedVersionFromThisBranch" : "7.39.1.20200714-prod",
+      "jacoco.haltOnFailure" : "false",
+      "version.org.jboss.errai" : "4.8.0.Final-redhat-00001",
+      "version.checkstyle.plugin" : "3.0.0",
+      "version.ch.qos.cal10n" : "0.8.1.redhat-1",
+      "version.mysql.connector-java" : "5.1.47",
+      "version.io.takari.maven.plugins.compiler" : "1.13.5",
+      "version.maven.model" : "3.3.9.redhat-2",
+      "version.com.fasterxml.classmate-4ee7" : "1.3.0",
+      "version.commons.net" : "3.6",
+      "version.wildfly.maven.plugin" : "1.2.1.Final",
+      "version.org.apache.lucene" : "6.6.1",
+      "version.org.apache.commons.math" : "2.1",
+      "version.bouncycastle" : "1.60.0.redhat-00002",
+      "version.org.python" : "2.5.3",
+      "version.com.google.inject.guice" : "4.0.0.redhat-2",
+      "version.org.codehaus.janino" : "2.5.16",
+      "version.org.hibernate-4ee7" : "5.1.15.Final",
+      "version.ejb.plugin" : "3.0.1",
+      "version.org.apache.cxf" : "3.2.12.redhat-00001",
+      "version.com.neovisionaries" : "1.27",
+      "maven.build.timestamp.format" : "yyyyMMddHHmm",
+      "version.org.apache.karaf" : "4.2.0",
+      "version.javax.enterprise" : "2.0.0.SP1-redhat-00004",
+      "version.squareup.okhttp3" : "3.8.1",
+      "project.root.dir" : "Q:\\dev\\projects\\inhouse\\process-automation-servicetask\\handlers\\log",
+      "version.jivesoftware.smack" : "3.1.0",
+      "version.org.scannotation" : "1.0.3.redhat-5",
+      "version.org.jboss.tools.tycho-plugins" : "1.0.0",
+      "version.org.jboss.spec.javax.xml.bind.jboss-jaxb-api_2.3_spec" : "1.0.1.Final-redhat-1",
+      "version.org.apache.maven.wagon" : "3.0.0.redhat-2",
+      "version.rxjava" : "1.2.4",
+      "version.com.h2database" : "1.3.173.redhat-2",
+      "version.org.mock-server" : "5.10.0",
+      "version.io.swagger" : "1.5.20",
+      "version.google.http.client" : "1.23.0",
+      "version.org.quartz-scheduler" : "2.3.2.redhat-00007",
+      "version.org.jbpm.jbpm-designer" : "7.39.0.Final-redhat-00005",
+      "version.clean.plugin" : "3.1.0",
+      "version.org.eclipse.emf.gwt" : "2.9.0",
+      "version.io.prometheus" : "0.5.0.redhat-00001",
+      "version.org.eclipse.jgit" : "5.0.2.201807311906-r-redhat-00001",
+      "version.org.apache.httpcomponents.httpcore" : "4.4.6",
+      "version.org.hornetq" : "2.4.7.Final-redhat-2",
+      "version.net.java.dev.glazedlists" : "1.8.0",
+      "parsedVersion.nextBuildNumber" : "1",
+      "version.jakarta.json.bind" : "1.0.2.redhat-00002",
+      "version.org.hibernate" : "5.3.16.Final-redhat-00002",
+      "version.io.netty.old" : "3.10.6.Final",
+      "version.junit" : "4.12",
+      "version.com.unboundid" : "3.2.0",
+      "version.org.jboss.arquillian.container.glassfish" : "1.0.0.CR3",
+      "version.org.robolectric" : "3.1.2",
+      "formattedVersion.nextBuildNumber" : "01",
+      "version.org.apache.poi" : "4.1.2",
+      "version.rome" : "1.0",
+      "version.de.benediktmeurer.gwt-slf4j" : "0.0.2",
+      "parsedVersion.nextIncrementalVersion" : "1",
+      "version.org.asciidoctor.asciidoctorj" : "2.2.0",
+      "revapi.oldKieVersion" : "7.33.0.Final",
+      "version.org.eclipse.aether" : "1.1.0.redhat-1",
+      "version.riot.api" : "4.1.0",
+      "version.javax.inject" : "1.0.0.redhat-6",
+      "version.xmlpull" : "1.2.0.redhat-00001",
+      "version.org.kogito.gwt-jsonix-schema-compiler" : "1.2.1",
+      "version.org.eclipse.emf.ecore.xmi" : "2.5.0.v20100521-1846",
+      "version.org.dom4j" : "2.1.3.redhat-00001",
+      "version.org.sonatype.sisu.sisu-guice" : "3.2.3",
+      "version.org.antlr" : "3.5.2.redhat-1",
+      "version.google.api.services.calendar" : "v3-rev87-1.19.0",
+      "version.google.api.services.gmail" : "v1-rev72-1.23.0",
+      "version.org.kie.workbench.app" : "7.39.0.Final-redhat-00005",
+      "version.com.github.javaparser" : "3.13.10",
+      "version.google.sheets" : "v4-rev488-1.23.0",
+      "version.org.sonatype.sisu" : "2.3.0",
+      "jboss.snapshots.repo.id" : "jboss-snapshots-repository",
+      "version.com.allen-sauer.gwt.dnd" : "3.3.3",
+      "version.net.byte-buddy" : "1.10.3",
+      "version.org.eclipse.tycho" : "1.0.0",
+      "version.jakarta-regexp" : "1.4",
+      "formattedVersion.buildNumber" : "00",
+      "downloadSources" : "true",
+      "version.org.apache.aries.blueprint.parser" : "1.4.0",
+      "parsedVersion.incrementalVersion" : "0",
+      "formattedVersion.minorVersion" : "39",
+      "version.sonar.plugin" : "3.4.0.905",
+      "version.zjsonpatch" : "0.3.0",
+      "version.tomcat" : "9.0.22",
+      "version.org.hibernate.commons.annotations" : "5.0.5.Final-redhat-00002",
+      "version.org.easymock" : "3.0",
+      "version.org.jpmml.model" : "1.4.11",
+      "version.buildhelper.plugin" : "3.0.0",
+      "version.com.ahome-it.lienzo.tooling.nativetools" : "1.0.195-RELEASE",
+      "parsedVersion.qualifier" : "Final-redhat-00005",
+      "version.org.picketlink" : "2.6.0.Final",
+      "version.org.jsoup" : "1.8.3.redhat-2",
+      "version.org.mockito" : "1.10.19",
+      "formattedVersion.majorVersion" : "07",
+      "version.org.easytesting.fest" : "2.0M6",
+      "version.org.jboss.spec.javax.servlet.jboss-servlet-api_3.1_spec" : "1.0.2.Final-redhat-1",
+      "version.io.github.bonigarcia" : "3.8.1",
+      "version.org.springframework" : "5.2.5.RELEASE",
+      "version.org.jboss.spec.javax.enterprise.concurrent" : "1.0.2.Final-redhat-1",
+      "version.org.javassist" : "3.26.0-GA",
+      "version.org.hibernate.hibernate-validator" : "4.1.0.Final",
+      "version.org.codehaus.plexus.plexus-interpolation" : "1.21.0.redhat-2",
+      "version.javax.xml.soap" : "1.4.0",
+      "version.commons-collections" : "3.2.2.redhat-2",
+      "version.org.jboss.arquillian.container.weld" : "1.0.0.CR5",
+      "version.antlr-4ee7" : "2.7.7",
+      "version.jxr.plugin" : "2.5",
+      "version.org.jboss.weld.weld-api" : "3.0.0.SP4-redhat-00001",
+      "version.org.wildfly.core" : "10.0.3.Final",
+      "version.org.jboss.spec.javax.servlet.jstl.jboss-jstl-api_1.2_spec" : "1.1.3.Final-redhat-1",
+      "version.org.awaitility" : "3.0.0",
+      "version.jpastebin" : "1.0.1",
+      "version.org.junit" : "5.5.2",
+      "version.org.uberfire" : "7.39.0.Final-redhat-00005",
+      "jacoco.exec.file" : "Q:\\dev\\projects\\inhouse\\process-automation-servicetask\\handlers\\log/target/jacoco.exec",
+      "version.org.jboss.jandex" : "2.1.1.Final-redhat-00001",
+      "version.org.eclipse.bpmn2" : "0.8.2-jboss",
+      "jboss.snapshots.repo.url" : "https://repository.jboss.org/nexus/content/repositories/snapshots/",
+      "version.egit.github" : "2.1.5",
+      "version.org.wildfly.camel" : "11.0.1",
+      "version.org.kie.uberfire.extensions" : "7.39.0.Final-redhat-00005",
+      "version.aopalliance" : "1.0.0.redhat-00003",
+      "version.net.openhft.chronicle-wire" : "1.16.15",
+      "maven.compiler.argument.source" : "1.8",
+      "version.org.glassfish.jaxb" : "2.3.2",
+      "version.org.apache.servicemix.bundles.javax-inject" : "1_2",
+      "version.org.jboss.remote-naming" : "2.0.5.Final-redhat-1",
+      "version.clover.plugin" : "4.1.2",
+      "version.npm" : "6.14.4",
+      "version.google.drive" : "v2-rev285-1.23.0",
+      "version.commons-dbcp" : "1.4-redhat-2",
+      "version.enforcer.plugin" : "3.0.0-M1",
+      "version.failsafe.plugin" : "2.22.1",
+      "parsedVersion.buildNumber" : "0",
+      "version.buildnumber.plugin" : "1.4",
+      "victims.updates" : "weekly",
+      "version.org.codehaus.cargo" : "1.7.9",
+      "java.module.name" : "",
+      "version.com.jcraft" : "0.1.54.redhat-00001",
+      "version.org.jboss.jboss-dmr" : "1.5.0.Final-redhat-1",
+      "version.org.jboss.spec.javax.el.jboss-el-api_3.0_spec" : "1.0.12.Final-redhat-00001",
+      "version.org.jboss.jandex-4ee7" : "2.0.3.Final",
+      "maven.compiler.argument.target" : "1.8",
+      "version.org.ow2.asm" : "7.1.0.redhat-00001",
+      "jacoco.line.coveredratio.minimum" : "0.9",
+      "version.com.google.guava.for-selenium" : "23.0",
+      "version.org.jbpm.jbpm-wb" : "7.39.0.Final-redhat-00005",
+      "version.okhttp" : "3.12.1",
+      "version.org.jboss.marshalling" : "2.0.9.Final-redhat-00001",
+      "failsafe.arg.line" : "-Dfile.encoding=UTF-8\n      -Xms256m\n      -Xmx1024m",
+      "version.org.jboss.arquillian" : "1.1.13.Final",
+      "version.org.hamcrest" : "1.3-redhat-1",
+      "version.org.w3c.css.sac" : "1.3-redhat-1",
+      "version.net.ltgt.gwt.maven" : "1.0-rc-6",
+      "version.ch.obermuhlner" : "2.0.1",
+      "version.commons-codec" : "1.11.0.redhat-00001",
+      "version.javadoc.plugin" : "3.0.1",
+      "version.commons-io" : "2.6.0.redhat-00001",
+      "version.org.apache.xmlbeans" : "3.1.0",
+      "version.jar.plugin" : "3.1.0",
+      "version.org.openjdk.jmh" : "1.21",
+      "version.findbugs.plugin" : "3.0.5",
+      "version.okta" : "1.3.0",
+      "version.org.apache.commons.lang3" : "3.9.0.redhat-00001",
+      "version.org.kie" : "7.39.0.Final-redhat-00005",
+      "javadoc.additional.params" : "-Xdoclint:none",
+      "version.commons-cli" : "1.3.1.redhat-2",
+      "version.xml-resolver" : "1.2.0.redhat-12",
+      "version.org.skyscreamer.jsonassert" : "1.2.3",
+      "version.google.tasks" : "v1-rev48-1.23.0",
+      "version.org.jboss.spec.javax.ws.rs.jboss-jaxrs-api_2.1_spec" : "1.0.2.Final-redhat-00001",
+      "version.org.slf4j" : "1.7.26",
+      "version.org.jdom" : "1.1.3.redhat-3",
+      "version.org.xmlunit" : "2.6.3",
+      "version.org.jboss.forge.roaster" : "2.19.5.Final",
+      "version.download.plugin" : "1.4.1",
+      "version.org.codehaus.woodstox" : "4.4.1.redhat-1",
+      "version.dropbox.core" : "3.0.5",
+      "version.org.google.gwt-charts" : "0.9.9",
+      "version.org.asciidoctor.asciidoctorj-pdf" : "1.5.0",
+      "version.checkstyle" : "8.10.1",
+      "version.commons-logging" : "1.1.1.redhat-3",
+      "version.org.eclipse.persistence" : "2.7.6",
+      "version.org.apache.ws.xmlschema" : "2.2.4.redhat-00001",
+      "version.org.jboss.classfilewriter" : "1.2.3.Final-redhat-00001",
+      "version.net.sf.opencsv" : "2.3",
+      "version.org.apache.maven.plugin-tools" : "3.4",
+      "version.org.eclipse.m2e.lifecycle-mapping" : "1.0.0",
+      "version.org.jboss.logging-4ee7" : "3.3.1.Final",
+      "version.com.sun.xml.messaging.saaj" : "1.5.0",
+      "version.ibm.developer.cloud" : "4.0.0",
+      "version.xmlsec" : "1.5.1-redhat-1",
+      "scmBranch" : "master",
+      "version.net.jcip" : "1.0.0.redhat-8",
+      "version.war.plugin" : "3.2.2",
+      "version.com.google.gwt.gwtmockito" : "1.1.9",
+      "version.net.sourceforge.cssparser" : "0.9.21",
+      "version.pir.plugin" : "2.9",
+      "version.source.plugin" : "3.0.1",
+      "version.frontend-maven-plugin" : "1.8.0",
+      "jboss.releases.repo.id" : "jboss-releases-repository",
+      "version.compiler.plugin" : "3.8.1",
+      "version.org.apache.sshd" : "1.6.0",
+      "version.commons-pool" : "1.6.0.redhat-10",
+      "version.javax.jws-api" : "1.1",
+      "version.com.google.protobuf" : "3.6.1",
+      "version.com.github.spotbugs-maven-plugin" : "3.1.8",
+      "version.org.reflections" : "0.9.11.redhat-00004",
+      "version.org.apache.xmlgraphics.commons" : "2.2",
+      "version.org.freemarker" : "2.3.28",
+      "version.javax.activation" : "1.1.1.redhat-5",
+      "version.asm" : "3.3.1.redhat-13",
+      "version.zanata.plugin" : "4.4.3",
+      "version.org.jboss.remoting" : "5.0.16.Final-redhat-00001",
+      "version.net.openhft.chronicle-bytes" : "1.16.16",
+      "illegaltransitivereportonly" : "false",
+      "version.com.google.code.gson" : "2.8.2.redhat-5",
+      "version.org.jboss.errai.wildfly" : "19.1.0.SP1",
+      "version.org.apache.velocity" : "1.7.0.redhat-5",
+      "version.javax.xml.ws" : "2.3.1",
+      "version.commons-jxpath" : "1.3-redhat-3"
+    },
+    "id" : "com.corp.concepts.process.automation.handler:customlog:7.39.0.Final-redhat-00005",
+    "artifacts" : [ {
+      "type" : "tar.gz",
+      "sha1" : "6392ec09ee9f4d1a474e5f2d455e44a1b7b6a972",
+      "md5" : "92ba75de14c80a0606b6c3cf77bb449f",
+      "name" : "customlog-7.39.0.Final-redhat-00005-project-sources.tar.gz"
+    }, {
+      "type" : "java-source-jar",
+      "sha1" : "89707ec10f6f69528367a80fba8a3bf8dbc5d3f2",
+      "md5" : "2fad135cc8d18da92554165192673a14",
+      "name" : "customlog-7.39.0.Final-redhat-00005-test-sources.jar"
+    }, {
+      "type" : "jar",
+      "sha1" : "f820d4348d4bc02a6c2c973813fa17b04ff454fb",
+      "md5" : "80727e25124b86a832bcfb541be68b06",
+      "name" : "customlog-7.39.0.Final-redhat-00005.jar"
+    }, {
+      "type" : "zip",
+      "sha1" : "f3381693657d3d5a66137bcd8add6de464a91c18",
+      "md5" : "5f8f0a526ef6ef1346376240bb56cf3b",
+      "name" : "customlog-7.39.0.Final-redhat-00005.zip"
+    }, {
+      "type" : "java-source-jar",
+      "sha1" : "601a5aaab3832792231964d11b6d2067083bdf80",
+      "md5" : "73e9d5f0b735088e8093c148ff28aa27",
+      "name" : "customlog-7.39.0.Final-redhat-00005-sources.jar"
+    }, {
+      "type" : "pom",
+      "sha1" : "55ffbd5a1830a1e55981c373c36780621e298ce0",
+      "md5" : "f94ba4f3b0ed0556310e1d6389c4d2fa",
+      "name" : "customlog-7.39.0.Final-redhat-00005.pom"
+    } ],
+    "dependencies" : [ {
+      "type" : "jar",
+      "sha1" : "97583c514ee3a2d875e309cda13eca6c036a826a",
+      "md5" : "b1b698bd17e88b192d02e23fba8f61ae",
+      "id" : "org.kie.soup:kie-soup-maven-support:7.39.0.Final-redhat-00005",
+      "scopes" : [ "provided" ]
+    }, {
+      "type" : "jar",
+      "sha1" : "dd71911c8aa3abc765ddef4402045f255efeb1a7",
+      "md5" : "49955e80887001e6b60e17fc4b61503c",
+      "id" : "com.github.javaparser:javaparser-core:3.13.10",
+      "scopes" : [ "provided" ]
+    }, {
+      "type" : "jar",
+      "sha1" : "caa45d7e2dae216aa4e06a0a05162acddb298851",
+      "md5" : "c026241c8d32447e8f0600d4981cd4ca",
+      "id" : "javax.inject:javax.inject:1.0.0.redhat-6",
+      "scopes" : [ "test" ]
+    }, {
+      "type" : "jar",
+      "sha1" : "7b8047b5382ad5b83bb0dcff00e933753086f122",
+      "md5" : "89ae7c34b5566c03bb0b851a633b6ad0",
+      "id" : "com.thoughtworks.xstream:xstream:1.4.11.1-redhat-00001",
+      "scopes" : [ "provided" ]
+    }, {
+      "type" : "jar",
+      "sha1" : "8ccb6ddff4b3d8d9305ce05177b55b1673715311",
+      "md5" : "f2bdd65529cb028e557f305bdda674bb",
+      "id" : "org.dom4j:dom4j:2.1.3.redhat-00001",
+      "scopes" : [ "test" ]
+    }, {
+      "type" : "jar",
+      "sha1" : "46f51ea328a5bb18f63f98bf14ff50f83424f2a2",
+      "md5" : "b47d5d0639d09a100ae2781e2980e7dd",
+      "id" : "org.jbpm:jbpm-persistence-jpa:7.39.0.Final-redhat-00005",
+      "scopes" : [ "test" ]
+    }, {
+      "type" : "jar",
+      "sha1" : "2c1af59bdf93aacc1102d6e6c56abf0bd2ec6647",
+      "md5" : "db6ca9808bcd719697649a98e3007a4b",
+      "id" : "org.jbpm:jbpm-runtime-manager:7.39.0.Final-redhat-00005",
+      "scopes" : [ "test" ]
+    }, {
+      "type" : "jar",
+      "sha1" : "d0d5770b95c0306c7d961d65d7613cecb2c19e64",
+      "md5" : "285d25a0c58177bfb0dafd72a56c4e3f",
+      "id" : "ch.qos.logback:logback-classic:1.2.3.redhat-00001",
+      "scopes" : [ "test" ]
+    }, {
+      "type" : "jar",
+      "sha1" : "f70e2c2308332efe30b2d8d535075b5ffb53da76",
+      "md5" : "6a13dd1553cc9be81d65f652053f3820",
+      "id" : "org.eclipse.sisu:org.eclipse.sisu.plexus:0.3.2.redhat-00002",
+      "scopes" : [ "test" ]
+    }, {
+      "type" : "jar",
+      "sha1" : "5a41cd2bda4e3cfa6d0541835fe7956b2de72728",
+      "md5" : "48df506cfc93375786c6c17eaad4d3be",
+      "id" : "org.eclipse.aether:aether-impl:1.1.0.redhat-1",
+      "scopes" : [ "test" ]
+    }, {
+      "type" : "jar",
+      "sha1" : "e8546f5bef4e061d8dd73895b4e8f40e3fe6effe",
+      "md5" : "c1967f0a515c4b8155f62478ec823464",
+      "id" : "org.mockito:mockito-core:1.10.19",
+      "scopes" : [ "test" ]
+    }, {
+      "type" : "jar",
+      "sha1" : "9f4202a546909d002d39a8ad4747227e72596358",
+      "md5" : "b6cb6479a18a7cb601609ad93068ce1a",
+      "id" : "org.apache.maven:maven-settings:3.3.9.redhat-2",
+      "scopes" : [ "test" ]
+    }, {
+      "type" : "jar",
+      "sha1" : "e9d078462822cf80cd2ba511afd4df90ca304443",
+      "md5" : "1b9c64fdc7924531fc027c011adaaf1f",
+      "id" : "org.drools:drools-compiler:7.39.0.Final-redhat-00005",
+      "scopes" : [ "provided" ]
+    }, {
+      "type" : "jar",
+      "sha1" : "57fe4a329ac074706ba8e0d7b26a4b6029cd379e",
+      "md5" : "946f7e26494e2e121507a628541406d0",
+      "id" : "org.jbpm:jbpm-human-task-audit:7.39.0.Final-redhat-00005",
+      "scopes" : [ "test" ]
+    }, {
+      "type" : "jar",
+      "sha1" : "5637890520a53244b1a8bce92bfa80bf3ec38a3e",
+      "md5" : "b793d6d6b97eecf3b821672a80ed9b01",
+      "id" : "org.eclipse.aether:aether-util:1.1.0.redhat-1",
+      "scopes" : [ "test" ]
+    }, {
+      "type" : "jar",
+      "sha1" : "e7191539e52f9252675595f1ab05e58ce0c93e82",
+      "md5" : "238dbfce9ecbe17019316fc7ed7cac57",
+      "id" : "ch.obermuhlner:big-math:2.0.1",
+      "scopes" : [ "provided" ]
+    }, {
+      "type" : "jar",
+      "sha1" : "02126e5c6c31adf3fc98c5d9b35895b7b77e9971",
+      "md5" : "d262f1e3340079be019a520912369a56",
+      "id" : "org.drools:drools-mvel-compiler:7.39.0.Final-redhat-00005",
+      "scopes" : [ "provided" ]
+    }, {
+      "type" : "jar",
+      "sha1" : "9df94aa9e25d33debda61b1029af46d89e6833ac",
+      "md5" : "efa9451326ad183fa79a978fedfe6364",
+      "id" : "aopalliance:aopalliance:1.0.0.redhat-00003",
+      "scopes" : [ "test" ]
+    }, {
+      "type" : "jar",
+      "sha1" : "0db4e5b256de8945691b863e1b2150a6834e187e",
+      "md5" : "7c7cec8d8c9f325d973a9479de7427fa",
+      "id" : "net.bytebuddy:byte-buddy:1.10.3",
+      "scopes" : [ "test" ]
+    }, {
+      "type" : "jar",
+      "sha1" : "24a91367943277926edbdf4cb1032065c411c2e7",
+      "md5" : "045cc633baa6eb313299ecd570a4974c",
+      "id" : "org.codehaus.plexus:plexus-interpolation:1.21.0.redhat-2",
+      "scopes" : [ "test" ]
+    }, {
+      "type" : "jar",
+      "sha1" : "17e724d076ba9318d51eb37305b1ab85af9e48ad",
+      "md5" : "40f58f34cc63307b893cadfb0161adb9",
+      "id" : "org.apache.httpcomponents:httpclient:4.5.4.redhat-00001",
+      "scopes" : [ "test" ]
+    }, {
+      "type" : "jar",
+      "sha1" : "7b71c57978ec9e0cb78276fec266a3cd851e370a",
+      "md5" : "52e8661b1d562c65e9beffb29abef5bd",
+      "id" : "org.kie:kie-dmn-core:7.39.0.Final-redhat-00005",
+      "scopes" : [ "provided" ]
+    }, {
+      "type" : "jar",
+      "sha1" : "77100a62c2e6f04b53977b9f541044d7d722693d",
+      "md5" : "60ec8751be37d54a2aa1b6178f87b968",
+      "id" : "org.slf4j:slf4j-api:1.7.26",
+      "scopes" : [ "compile" ]
+    }, {
+      "type" : "jar",
+      "sha1" : "03d5f48f10bbe4eb7bd862f10c0583be2e0053c6",
+      "md5" : "1e2e0fcc510753882683417e01895242",
+      "id" : "com.fasterxml:classmate:1.3.4",
+      "scopes" : [ "test" ]
+    }, {
+      "type" : "jar",
+      "sha1" : "fca2eeb0b1332027583e619600865b488c688178",
+      "md5" : "b9eb1ff3752156246cc6eefe18fec3e0",
+      "id" : "org.kie:kie-api:7.39.0.Final-redhat-00005",
+      "scopes" : [ "provided" ]
+    }, {
+      "type" : "jar",
+      "sha1" : "7655acbac9635ba9c7a630dfa496be3a44346724",
+      "md5" : "2ab3d29ce3ed1d05abe2b6523e05f07e",
+      "id" : "org.apache.ant:ant:1.8.4-redhat-1",
+      "scopes" : [ "test" ]
+    }, {
+      "type" : "jar",
+      "sha1" : "2113100f3aac47f62a948e4a00a2ddfa6497fb62",
+      "md5" : "44c426640dcc885a6c178cbd5e4fee11",
+      "id" : "org.jboss.spec.javax.resource:jboss-connector-api_1.7_spec:1.0.0.Final",
+      "scopes" : [ "test" ]
+    }, {
+      "type" : "jar",
+      "sha1" : "bb0a2ebcbdbf2eb8038eb07f05ce483adad90856",
+      "md5" : "5141e422734fd718e0f82d73124388ba",
+      "id" : "simple-jndi:simple-jndi:0.11.4.1",
+      "scopes" : [ "test" ]
+    }, {
+      "type" : "jar",
+      "sha1" : "688c8cb384a31060fc04130eec1c6e68546d0e3e",
+      "md5" : "019fea77211f3f7f74eb5b35cc73a476",
+      "id" : "org.powermock:powermock-api-support:1.7.4",
+      "scopes" : [ "test" ]
+    }, {
+      "type" : "jar",
+      "sha1" : "e3fd8ced1f52c7574af952e2e6da0df8df08eb82",
+      "md5" : "a9fbd503e0802507efeeaffb56bbdf52",
+      "id" : "org.apache.httpcomponents:httpcore:4.4.6",
+      "scopes" : [ "test" ]
+    }, {
+      "type" : "jar",
+      "sha1" : "78f2397880a7ffeea5703eb99b4c3a68423295cb",
+      "md5" : "559cafecb45c3497967cafcea9520421",
+      "id" : "org.jpmml:pmml-model:1.4.11",
+      "scopes" : [ "provided" ]
+    }, {
+      "type" : "jar",
+      "sha1" : "8f830ad3c06744050c2ea299b2577d505f7dbd85",
+      "md5" : "add6dd91c85e7922c39251ca806bedf4",
+      "id" : "org.kie:kie-test-util:7.39.0.Final-redhat-00005",
+      "scopes" : [ "test" ]
+    }, {
+      "type" : "jar",
+      "sha1" : "89737044b5818207c800b34c4cc67037cd7ea1bb",
+      "md5" : "46148b96db8e74a80b698f4305901c48",
+      "id" : "org.kie:kie-ci:7.39.0.Final-redhat-00005",
+      "scopes" : [ "test" ]
+    }, {
+      "type" : "jar",
+      "sha1" : "d596dbde8b683f86938d238a41703941c7b7d02d",
+      "md5" : "01de9ed719b0df617c07e94199a2ad08",
+      "id" : "com.fasterxml.jackson.core:jackson-annotations:2.10.4.redhat-00001",
+      "scopes" : [ "provided" ]
+    }, {
+      "type" : "jar",
+      "sha1" : "4f2586ab88e917074295233e184508e568a8b899",
+      "md5" : "d255ebe90114af39c92518be81e8e47a",
+      "id" : "org.eclipse.sisu:org.eclipse.sisu.inject.extender:0.3.2.redhat-00002",
+      "scopes" : [ "test" ]
+    }, {
+      "type" : "jar",
+      "sha1" : "bb2890849968d8d8311ffba8c37b0ce16ce284dc",
+      "md5" : "547690071a74a2aafb01896c9f42b37d",
+      "id" : "org.javassist:javassist:3.26.0-GA",
+      "scopes" : [ "provided" ]
+    }, {
+      "type" : "jar",
+      "sha1" : "7a885f7f2d9e3ea8293c5fb41a757229b180518b",
+      "md5" : "e5f63a3e1905a1fd6c85694c9f98f2ab",
+      "id" : "org.jbpm:jbpm-document:7.39.0.Final-redhat-00005",
+      "scopes" : [ "provided" ]
+    }, {
+      "type" : "no_aop-jar",
+      "sha1" : "178abf988b12103fae3cf45f46aafcdf30be771e",
+      "md5" : "56ab9c56b9adb21595cdd9d821627666",
+      "id" : "com.google.inject:guice:4.0.0.redhat-2",
+      "scopes" : [ "test" ]
+    }, {
+      "type" : "jar",
+      "sha1" : "05f4abe30142d530f663a04617f86ca1e72c590e",
+      "md5" : "807daa5af0975c71977527336cb524cd",
+      "id" : "org.kie.soup:kie-soup-xstream:7.39.0.Final-redhat-00005",
+      "scopes" : [ "provided" ]
+    }, {
+      "type" : "jar",
+      "sha1" : "44514466a7d4a7a5021ba24b90b6de139b43737c",
+      "md5" : "41bfd15be7304222ba8c9d0c0a31f079",
+      "id" : "org.drools:drools-model-compiler:7.39.0.Final-redhat-00005",
+      "scopes" : [ "provided" ]
+    }, {
+      "type" : "jar",
+      "sha1" : "8cd799269c488afc2f20508f6a3d24a71f2b1a0d",
+      "md5" : "0f5c4261e6ada443a38637497fb3da26",
+      "id" : "org.apache.tomcat:tomcat-juli:9.0.21.redhat-5",
+      "scopes" : [ "test" ]
+    }, {
+      "type" : "jar",
+      "sha1" : "bc5dfd71386e36eb4fec24a61aa28bea883979ec",
+      "md5" : "47bfd78baf44781399a03be1f8b52446",
+      "id" : "org.apache.maven:maven-repository-metadata:3.3.9.redhat-2",
+      "scopes" : [ "test" ]
+    }, {
+      "type" : "jar",
+      "sha1" : "a4c03fde5002a54d613a97b94b8baf4b9e83e076",
+      "md5" : "e5815561f7e5524a26c5a807cfb77de6",
+      "id" : "org.jbpm:jbpm-bpmn2:7.39.0.Final-redhat-00005",
+      "scopes" : [ "provided" ]
+    }, {
+      "type" : "jar",
+      "sha1" : "16973faf503c68b82bbab479ab63c54bd4fe75cc",
+      "md5" : "2a2b89806586c1e13afc37a3d7f40572",
+      "id" : "org.kie.soup:kie-soup-maven-integration:7.39.0.Final-redhat-00005",
+      "scopes" : [ "test" ]
+    }, {
+      "type" : "jar",
+      "sha1" : "a5e188b576968d37809c5cac229aede55a70413b",
+      "md5" : "9165992827666a785f92109d4173d87f",
+      "id" : "commons-io:commons-io:2.6.0.redhat-00001",
+      "scopes" : [ "provided" ]
+    }, {
+      "type" : "jar",
+      "sha1" : "f9c6b3e59c04611004b115b361521c5a3f85a3a9",
+      "md5" : "5d6c736cc408d584b23db0f04f7d75e9",
+      "id" : "org.apache.ant:ant-launcher:1.8.3-redhat-1",
+      "scopes" : [ "test" ]
+    }, {
+      "type" : "jar",
+      "sha1" : "7fe453b678b71c87c6677cef26f6b0cd96b26586",
+      "md5" : "f9386bb150f5cd38d3c161093724b50e",
+      "id" : "org.antlr:antlr4-runtime:4.8",
+      "scopes" : [ "provided" ]
+    }, {
+      "type" : "jar",
+      "sha1" : "3a0aaebc7df3f85b1a87093b742c31027d7e0c90",
+      "md5" : "2ed4900265ef4a0072d84de52917bbbc",
+      "id" : "org.jboss.spec.javax.xml.bind:jboss-jaxb-api_2.3_spec:1.0.1.Final-redhat-1",
+      "scopes" : [ "provided" ]
+    }, {
+      "type" : "jar",
+      "sha1" : "7d7b89dc9e1b90213e2c4043b8a91e4da7dd0dd0",
+      "md5" : "e1f64fe139781e8402699bb0d8a2f2c9",
+      "id" : "javax.persistence:javax.persistence-api:2.2.0.redhat-1",
+      "scopes" : [ "provided" ]
+    }, {
+      "type" : "jar",
+      "sha1" : "377a021eb35a6c432e280a2315bfe262b398c114",
+      "md5" : "b0e95c1a662f745a4f5181af5d710d59",
+      "id" : "org.apache.maven:maven-model-builder:3.3.9.redhat-2",
+      "scopes" : [ "test" ]
+    }, {
+      "type" : "jar",
+      "sha1" : "ef8dc52b6a096ed840c71ec26ee3ab3b808e1e40",
+      "md5" : "799899adfb8af2823dbdd5336bae816d",
+      "id" : "org.eclipse.aether:aether-transport-wagon:1.1.0.redhat-1",
+      "scopes" : [ "test" ]
+    }, {
+      "type" : "jar",
+      "sha1" : "593d4664943a9f77d77f88494b66c9c297e03964",
+      "md5" : "fc7e355e6b9f6a9f5719c73ba5d0a379",
+      "id" : "org.mvel:mvel2:2.4.8.Final-redhat-00001",
+      "scopes" : [ "provided" ]
+    }, {
+      "type" : "jar",
+      "sha1" : "81e74687fc9b4dc9882b299a263fe2025bdd951d",
+      "md5" : "67a7035d42c989b37eb448157c7080ce",
+      "id" : "org.sonatype.plexus:plexus-sec-dispatcher:1.3.0.redhat-1",
+      "scopes" : [ "test" ]
+    }, {
+      "type" : "jar",
+      "sha1" : "8dfb9facd0830a27b1b5f29f84593f0aeee7773b",
+      "md5" : "8bb8fa2edfd60d5c7ed6bf9923d14aa8",
+      "id" : "org.apache.commons:commons-exec:1.3",
+      "scopes" : [ "provided" ]
+    }, {
+      "type" : "jar",
+      "sha1" : "7db8344c2c34baab81ac3f6e9ad1cf45e1d08d37",
+      "md5" : "39e65ecb1987a65e03e72a2d4923c4f6",
+      "id" : "org.powermock:powermock-api-mockito-common:1.7.4",
+      "scopes" : [ "test" ]
+    }, {
+      "type" : "jar",
+      "sha1" : "ed61b32d55ef2d96b6b749d23c226f956a5ca28a",
+      "md5" : "ca07c84c45ebf719098d5f1b6f59f680",
+      "id" : "org.kie:kie-dmn-model:7.39.0.Final-redhat-00005",
+      "scopes" : [ "provided" ]
+    }, {
+      "type" : "jar",
+      "sha1" : "a1397dd2f180e21b5fe78400c9a6a06f7420179b",
+      "md5" : "6c9d7013108e53b005c10543fae9337e",
+      "id" : "org.apache.maven:maven-compat:3.3.9.redhat-2",
+      "scopes" : [ "test" ]
+    }, {
+      "type" : "jar",
+      "sha1" : "22ae885cbf7ef75d0f099c607ff269e1674f192e",
+      "md5" : "951f125a3144219b6df22ff82ec57b4d",
+      "id" : "org.jbpm:jbpm-workitems-core:7.39.0.Final-redhat-00005",
+      "scopes" : [ "test", "provided" ]
+    }, {
+      "type" : "jar",
+      "sha1" : "99ba06baebde73d0e0738f884db5d81bef5c4497",
+      "md5" : "e64604683a09c17b465b5a735b752fcf",
+      "id" : "org.jboss.spec.javax.transaction:jboss-transaction-api_1.2_spec:1.1.1.Final-redhat-1",
+      "scopes" : [ "provided" ]
+    }, {
+      "type" : "jar",
+      "sha1" : "86d5ec5f5e4af78eb021830e170e1ecfc71f507c",
+      "md5" : "6bc02b180c188c1ddec1236e8894ca15",
+      "id" : "org.drools:drools-core:7.39.0.Final-redhat-00005",
+      "scopes" : [ "provided" ]
+    }, {
+      "type" : "jar",
+      "sha1" : "3f9e723fed28417f35bc416e24e1f8f143109979",
+      "md5" : "fa97f387c1c7bb32321438acf1c95ef8",
+      "id" : "org.jbpm:jbpm-human-task-core:7.39.0.Final-redhat-00005",
+      "scopes" : [ "test" ]
+    }, {
+      "type" : "jar",
+      "sha1" : "65c67ca108150de8e783fa45845fe5204841d7cb",
+      "md5" : "cca67a136c70ed48e61c5e71ce3c8e4d",
+      "id" : "org.apache.maven:maven-aether-provider:3.3.9.redhat-2",
+      "scopes" : [ "test" ]
+    }, {
+      "type" : "jar",
+      "sha1" : "7609d24e3c70cb94214ae92607957fb9327ee59e",
+      "md5" : "0b2d5693bc83842f2f636eb2aaa1f6ad",
+      "id" : "org.apache.maven:maven-plugin-api:3.3.9.redhat-2",
+      "scopes" : [ "test" ]
+    }, {
+      "type" : "jar",
+      "sha1" : "4eb6a0adad553bf759ffe86927df6f3b848c8bea",
+      "md5" : "f7f4be4695e2501a6d585beca305c74c",
+      "id" : "com.sun.xml.fastinfoset:FastInfoset:1.2.16",
+      "scopes" : [ "test" ]
+    }, {
+      "type" : "jar",
+      "sha1" : "fa790c210666f8bd75671b6ff5f677eee1776f24",
+      "md5" : "d04b4b3cdcdecd5b68a9c9dc24c5cb18",
+      "id" : "org.drools:drools-mvel-parser:7.39.0.Final-redhat-00005",
+      "scopes" : [ "provided" ]
+    }, {
+      "type" : "jar",
+      "sha1" : "78011e483a21102fb4858f3e8f269a677e50aa23",
+      "md5" : "8fea4418fa80e957e39c174cec08053c",
+      "id" : "org.jvnet.staxex:stax-ex:1.8.1",
+      "scopes" : [ "test" ]
+    }, {
+      "type" : "jar",
+      "sha1" : "e92fa86e73ad64eba0089b1e829a03ac17136603",
+      "md5" : "5c3dd53702af01cdbf7748dfc3b5b811",
+      "id" : "org.drools:drools-core-reflective:7.39.0.Final-redhat-00005",
+      "scopes" : [ "provided" ]
+    }, {
+      "type" : "jar",
+      "sha1" : "0d06d46ecfd92ec6d0f3b423b4cd81cb38d8b924",
+      "md5" : "17b60a7d277343a16fe881d18adecc0b",
+      "id" : "com.google.protobuf:protobuf-java:3.6.1",
+      "scopes" : [ "provided" ]
+    }, {
+      "type" : "jar",
+      "sha1" : "6b4e669f3dc2e6048040a88c2ce0f0def894a45e",
+      "md5" : "24c7a373eec8b03e5a902ebe2eae1add",
+      "id" : "org.kie:kie-dmn-api:7.39.0.Final-redhat-00005",
+      "scopes" : [ "provided" ]
+    }, {
+      "type" : "jar",
+      "sha1" : "3cad7e5d7ed5cf6f67562f82e28eedda0392a972",
+      "md5" : "c9b298b55b7fe59f645fbb6a03991d17",
+      "id" : "xmlpull:xmlpull:1.2.0.redhat-00001",
+      "scopes" : [ "provided" ]
+    }, {
+      "type" : "jar",
+      "sha1" : "e755e498b0bc473eed61102a0d4f3a0489477cfb",
+      "md5" : "93a9cf9a8b2f2b5273ea2c1d5f23ddd1",
+      "id" : "org.jboss.narayana.jta:narayana-jta:5.9.0.Final-redhat-00001",
+      "scopes" : [ "test" ]
+    }, {
+      "type" : "jar",
+      "sha1" : "23b5c71a692925434db821ca48caf9bdb6821cb6",
+      "md5" : "28bb49226b75c91455ed14a6037467d3",
+      "id" : "org.jbpm:jbpm-persistence-api:7.39.0.Final-redhat-00005",
+      "scopes" : [ "test" ]
+    }, {
+      "type" : "jar",
+      "sha1" : "178099b6431a929a66fadd5103a7ec269ad5cb6b",
+      "md5" : "f99dd08cd151cd97d5abfd98c6e279b9",
+      "id" : "org.apache.maven.wagon:wagon-provider-api:3.0.0.redhat-2",
+      "scopes" : [ "test" ]
+    }, {
+      "type" : "jar",
+      "sha1" : "62213814450965f2dc5fd732931c82f428afb1f9",
+      "md5" : "d49b226e9e8c783ffb4234395b4c6f5b",
+      "id" : "com.fasterxml.jackson.core:jackson-core:2.10.4.redhat-00001",
+      "scopes" : [ "provided" ]
+    }, {
+      "type" : "jar",
+      "sha1" : "a36d80039e2946a827f7cf0c026b2bef12ed6712",
+      "md5" : "86a5e92354f9bca74d4ef2f0253b5ae2",
+      "id" : "javax.enterprise:cdi-api:2.0.0.SP1-redhat-00004",
+      "scopes" : [ "test" ]
+    }, {
+      "type" : "jar",
+      "sha1" : "fb4b334e33426c1e10d8e1e11b85f1285e2b9501",
+      "md5" : "02780138e3a49f81c5681c35b912e228",
+      "id" : "org.apache.tomcat:tomcat-dbcp:9.0.21.redhat-5",
+      "scopes" : [ "test" ]
+    }, {
+      "type" : "jar",
+      "sha1" : "985ec439b69ec5b3cc7e2f805c7e4e80a10ef002",
+      "md5" : "df04ad9ad7ebdef1d571d21c0269db5f",
+      "id" : "org.apache.commons:commons-lang3:3.9.0.redhat-00001",
+      "scopes" : [ "provided" ]
+    }, {
+      "type" : "jar",
+      "sha1" : "a484263077a371165c2fa96aa52935cd580a3e3c",
+      "md5" : "99455ec48198298fdb8104c92b86b6ae",
+      "id" : "org.powermock:powermock-reflect:1.7.4",
+      "scopes" : [ "test" ]
+    }, {
+      "type" : "jar",
+      "sha1" : "7aa9e4a847e77277c0bfa88ea9b7ffcea482e7b2",
+      "md5" : "d54f3694af3d7437a44fcc7cee1ede2e",
+      "id" : "ch.qos.logback:logback-core:1.2.3.redhat-00001",
+      "scopes" : [ "test" ]
+    }, {
+      "type" : "jar",
+      "sha1" : "202903f812809ed9dcd14491c6d1b13b38d5b178",
+      "md5" : "438f922dbc002a61f3920704c97eec0d",
+      "id" : "xpp3:xpp3_min:1.2.0.redhat-00001",
+      "scopes" : [ "provided" ]
+    }, {
+      "type" : "jar",
+      "sha1" : "89c82993ec1df3c6856878eb6dfc03f6109d4962",
+      "md5" : "6075710ade0a025f33d56bbba643ac79",
+      "id" : "org.hibernate.common:hibernate-commons-annotations:5.0.5.Final-redhat-00002",
+      "scopes" : [ "test" ]
+    }, {
+      "type" : "jar",
+      "sha1" : "d1348665980dfe79e0eae3476640dd7f62673df6",
+      "md5" : "49da09785f3ae32408314831ba5a9787",
+      "id" : "org.jbpm:jbpm-test:7.39.0.Final-redhat-00005",
+      "scopes" : [ "test" ]
+    }, {
+      "type" : "jar",
+      "sha1" : "33fbc2d93de829fa5e263c5ce97f5eab8f57d53e",
+      "md5" : "06ceba253db8a4d836921324015c9ca5",
+      "id" : "org.slf4j:jcl-over-slf4j:1.7.26",
+      "scopes" : [ "test" ]
+    }, {
+      "type" : "jar",
+      "sha1" : "0c013c5d7365477500eee744b65257c72f06e5ee",
+      "md5" : "7c229147e920d811b12873e51bbd78a8",
+      "id" : "org.antlr:ST4:4.0.7",
+      "scopes" : [ "provided" ]
+    }, {
+      "type" : "jar",
+      "sha1" : "fdf89b85ceadda4f778b3557a3f0dc419cf529b2",
+      "md5" : "4d201271ec702f4ba9cd37027f0f1cca",
+      "id" : "org.kie:kie-internal:7.39.0.Final-redhat-00005",
+      "scopes" : [ "provided" ]
+    }, {
+      "type" : "jar",
+      "sha1" : "15475497e0064b4827d1d3a84a51ba99f125033c",
+      "md5" : "7cbcc123efd058454f9902b09be2f4ec",
+      "id" : "org.kie.soup:kie-soup-project-datamodel-commons:7.39.0.Final-redhat-00005",
+      "scopes" : [ "provided" ]
+    }, {
+      "type" : "jar",
+      "sha1" : "00a0c4edc12ac11aacb440c9514c7a9e4c43b873",
+      "md5" : "11c7a27fc3cb10c663bf1257abce6ea2",
+      "id" : "commons-collections:commons-collections:3.2.2.redhat-2",
+      "scopes" : [ "test" ]
+    }, {
+      "type" : "jar",
+      "sha1" : "17f4739050c1de2115057f84e87eb60a5475634a",
+      "md5" : "c0b7b838af6395468a9657be3e29ccf7",
+      "id" : "org.eclipse.aether:aether-spi:1.1.0.redhat-1",
+      "scopes" : [ "test" ]
+    }, {
+      "type" : "jar",
+      "sha1" : "92808371e9b7d1e3cdc025ca8aea0317addf3b34",
+      "md5" : "f16e79658e7ab3b5b70dfd6158fefc0b",
+      "id" : "org.jboss.logging:jboss-logging:3.4.1.Final-redhat-00001",
+      "scopes" : [ "test" ]
+    }, {
+      "type" : "jar",
+      "sha1" : "c432e09c53b2b6473d4a2fa5a640e32385b6e144",
+      "md5" : "a75aa0014beb3137692d8ac0bb53aa37",
+      "id" : "commons-codec:commons-codec:1.11.0.redhat-00001",
+      "scopes" : [ "provided" ]
+    }, {
+      "type" : "jar",
+      "sha1" : "79e0bc23b7f0c129371664b209cc88a8b630db72",
+      "md5" : "ca69c9015aa15a9d2f6ddf0cfe202e98",
+      "id" : "org.eclipse.aether:aether-transport-file:1.1.0.redhat-1",
+      "scopes" : [ "test" ]
+    }, {
+      "type" : "jar",
+      "sha1" : "2170b16d933fdd9815bc1f3871771ab30e9ad2fe",
+      "md5" : "5a4d4bc7158ae2a2f6cad52480ca82a6",
+      "id" : "org.powermock:powermock-core:1.7.4",
+      "scopes" : [ "test" ]
+    }, {
+      "type" : "jar",
+      "sha1" : "48794e8dd13121e2aa6e307d2aa00c4bedf67d74",
+      "md5" : "d6c8bbed15d8a684d1693e42f57fd86e",
+      "id" : "org.apache.maven.wagon:wagon-http:3.0.0.redhat-2",
+      "scopes" : [ "test" ]
+    }, {
+      "type" : "jar",
+      "sha1" : "c1b8755be3ba1f0740abcdc04d8efe80550e6214",
+      "md5" : "c0480ce6655e831d3ab166130ed5b545",
+      "id" : "org.jbpm.contrib:template-resources:7.39.0.Final-redhat-00005",
+      "scopes" : [ "provided" ]
+    }, {
+      "type" : "jar",
+      "sha1" : "d6a97364045aa6b99bf2d3c566a3f98599c2d296",
+      "md5" : "d8555a2f242c55d6727b4d0e82ab8446",
+      "id" : "com.sun.istack:istack-commons-runtime:3.0.8",
+      "scopes" : [ "test" ]
+    }, {
+      "type" : "jar",
+      "sha1" : "5259bab06c7f8f3f8b54e28336f10c03b0adf4dc",
+      "md5" : "ee1cf9b7547e3007c0fd826472bb2cef",
+      "id" : "org.jbpm:jbpm-services-api:7.39.0.Final-redhat-00005",
+      "scopes" : [ "test" ]
+    }, {
+      "type" : "test-jar",
+      "sha1" : "ba168fabf95d6e97d04df86ca898eae214559c5e",
+      "md5" : "26c37b2ec2f0ff793c10a9a65b2b70f7",
+      "id" : "org.jbpm:jbpm-workitems-core:7.39.0.Final-redhat-00005",
+      "scopes" : [ "test" ]
+    }, {
+      "type" : "jar",
+      "sha1" : "1b8ee827f09993bf31dc2df06a055b19cf2c1b1a",
+      "md5" : "89548debc6b5b4269b19957ea2722276",
+      "id" : "org.apache.maven:maven-core:3.3.9.redhat-2",
+      "scopes" : [ "test" ]
+    }, {
+      "type" : "jar",
+      "sha1" : "f30c777ee3ad4ab9a5edea1488606c6267b2352f",
+      "md5" : "0ff630ba5d6bcd8fb44ad7135dc895b5",
+      "id" : "org.eclipse.aether:aether-api:1.1.0.redhat-1",
+      "scopes" : [ "test" ]
+    }, {
+      "type" : "jar",
+      "sha1" : "b4967118c09f559e13750a2952c198192f32aaf6",
+      "md5" : "f5a24f30a845a878c0a846707b0edcd4",
+      "id" : "org.kie:kie-dmn-backend:7.39.0.Final-redhat-00005",
+      "scopes" : [ "provided" ]
+    }, {
+      "type" : "jar",
+      "sha1" : "167183d3aec4ee5484d3aae073a6c3bbcd38fc25",
+      "md5" : "ce119a03c0bb525be3199d42ff729756",
+      "id" : "org.jbpm:jbpm-flow-builder:7.39.0.Final-redhat-00005",
+      "scopes" : [ "provided" ]
+    }, {
+      "type" : "jar",
+      "sha1" : "42f3cac4a77aa2d7f9d091a9c54553046a4efc32",
+      "md5" : "9460f865ed787153c153f324d7a6f1f5",
+      "id" : "org.codehaus.plexus:plexus-classworlds:2.5.2.redhat-2",
+      "scopes" : [ "test" ]
+    }, {
+      "type" : "jar",
+      "sha1" : "16c8562bd9ca6c1e1c55b935ce9737db1e42502b",
+      "md5" : "9951471416f96d0fa55464a33e43386f",
+      "id" : "org.jpmml:pmml-agent:1.4.11",
+      "scopes" : [ "provided" ]
+    }, {
+      "type" : "jar",
+      "sha1" : "fedfc69de5d79b7b55d0ce58ff1203c8a86137da",
+      "md5" : "8a003f5b50b684d6841803454be1dd9b",
+      "id" : "javax.mail:mail:1.4.5.redhat-2",
+      "scopes" : [ "test" ]
+    }, {
+      "type" : "jar",
+      "sha1" : "fa5943efc7eedb1564cdd070e33a918ce4a1a8b9",
+      "md5" : "edee36dcffe4536ff3c2f177d4fede23",
+      "id" : "org.jbpm:jbpm-flow:7.39.0.Final-redhat-00005",
+      "scopes" : [ "provided" ]
+    }, {
+      "type" : "jar",
+      "sha1" : "ff08a7435a2f1e051624498f26cba7a85497a6bb",
+      "md5" : "257b2245471c79c061bdf2ca3e993fa4",
+      "id" : "org.jbpm:jbpm-query-jpa:7.39.0.Final-redhat-00005",
+      "scopes" : [ "provided" ]
+    }, {
+      "type" : "jar",
+      "sha1" : "c74a5e6fd5ca10d1b4776998a03b4dcc264d3734",
+      "md5" : "5eb6c30ec0e7726168caa623f383d4a8",
+      "id" : "org.hibernate:hibernate-entitymanager:5.3.16.Final-redhat-00002",
+      "scopes" : [ "test" ]
+    }, {
+      "type" : "jar",
+      "sha1" : "205512af3ee599add25ffe5a98ac1c8ef5b25a22",
+      "md5" : "936b28730cc7b380e141c280b8843064",
+      "id" : "com.google.guava:guava:14.0.1.redhat-1",
+      "scopes" : [ "test" ]
+    }, {
+      "type" : "jar",
+      "sha1" : "eed5d7c57f7d1754e67c8bfea7adb656a9c537f7",
+      "md5" : "e0e999311b1394a3dee4684657dddc65",
+      "id" : "com.fasterxml.jackson.core:jackson-databind:2.10.4.redhat-00001",
+      "scopes" : [ "provided" ]
+    }, {
+      "type" : "jar",
+      "sha1" : "4a6d40aa89918f957f89c99f028b2eecc4a92fef",
+      "md5" : "fef182e2b10109ca6fc4a349faf41e6f",
+      "id" : "org.drools:drools-canonical-model:7.39.0.Final-redhat-00005",
+      "scopes" : [ "provided" ]
+    }, {
+      "type" : "jar",
+      "sha1" : "4feda34f2d6432378870c577d8f8ece78a8edfc2",
+      "md5" : "a6125a402cc4061c6e135dbfc20ee9a1",
+      "id" : "org.apache.maven:maven-artifact:3.3.9.redhat-2",
+      "scopes" : [ "test" ]
+    }, {
+      "type" : "jar",
+      "sha1" : "18cc40fb5e3997ad766405986bcbb64d6a4551a4",
+      "md5" : "9c3e967ab49e461f976cb4d3d5c83ea0",
+      "id" : "org.powermock:powermock-module-junit4:1.7.4",
+      "scopes" : [ "test" ]
+    }, {
+      "type" : "jar",
+      "sha1" : "5528bc882ea499a09d720b42af11785c4fc6be2a",
+      "md5" : "9c3bf13a58e56c1b955bf5a365ca10b2",
+      "id" : "org.glassfish.jaxb:jaxb-runtime:2.3.2",
+      "scopes" : [ "test" ]
+    }, {
+      "type" : "jar",
+      "sha1" : "3e5bcc77cababe5c2b51ebf22bbff99a64f95f56",
+      "md5" : "d036314fcf5256607a3fd78f269c9c6a",
+      "id" : "org.apache.maven:maven-settings-builder:3.3.9.redhat-2",
+      "scopes" : [ "test" ]
+    }, {
+      "type" : "jar",
+      "sha1" : "9ecb771e93eaae897d952cab7cf922eb346e5258",
+      "md5" : "44ec16c180efc67108456d865c79b4ac",
+      "id" : "org.eclipse.aether:aether-connector-basic:1.1.0.redhat-1",
+      "scopes" : [ "test" ]
+    }, {
+      "type" : "jar",
+      "sha1" : "4231a16262798cc9655a464104e06fa90d482841",
+      "md5" : "d58ec9777582df4a62d4adc3193b989e",
+      "id" : "org.drools:drools-persistence-jpa:7.39.0.Final-redhat-00005",
+      "scopes" : [ "provided" ]
+    }, {
+      "type" : "jar",
+      "sha1" : "5b9905e51edd780ece1c24867adcef517e78c0a4",
+      "md5" : "811e255791b035a7f48e9f639a3a098b",
+      "id" : "org.jbpm:jbpm-human-task-jpa:7.39.0.Final-redhat-00005",
+      "scopes" : [ "test" ]
+    }, {
+      "type" : "jar",
+      "sha1" : "ca9655db2b5afe3c603c4b7b17f45c12ba0415a7",
+      "md5" : "9249a243f57c219137f47782309ae6d3",
+      "id" : "org.apache.maven:maven-builder-support:3.3.9.redhat-2",
+      "scopes" : [ "test" ]
+    }, {
+      "type" : "jar",
+      "sha1" : "5f6132c75cc40e40bcf2adb3dd4816648faeb81c",
+      "md5" : "7e56bbd5096c2da207b79138d0a94b32",
+      "id" : "org.jbpm:jbpm-shared-services:7.39.0.Final-redhat-00005",
+      "scopes" : [ "test" ]
+    }, {
+      "type" : "jar",
+      "sha1" : "4797d8316c4285ee082568f6477647e2edda6bcd",
+      "md5" : "232e594218a012bcdc1b5dc6ed635579",
+      "id" : "org.codehaus.plexus:plexus-component-annotations:1.6.0.redhat-2",
+      "scopes" : [ "test" ]
+    }, {
+      "type" : "jar",
+      "sha1" : "60531e2d2ceb152c2046492a508e9578b38d6cd5",
+      "md5" : "0b99e361df9e81b83f34279a4883e5e9",
+      "id" : "org.eclipse.aether:aether-transport-http:1.1.0.redhat-1",
+      "scopes" : [ "test" ]
+    }, {
+      "type" : "jar",
+      "sha1" : "21d07cf183a746a82b07a8c8eb93fb87e0b7371e",
+      "md5" : "1a977b691cb37ac4882fbd34cb1bb510",
+      "id" : "org.jbpm:jbpm-test-util:7.39.0.Final-redhat-00005",
+      "scopes" : [ "test" ]
+    }, {
+      "type" : "jar",
+      "sha1" : "0b89fa7886cfc4b09f866ce6d09c5b4d11852a63",
+      "md5" : "461f78d9f1f19a6207968366ec971907",
+      "id" : "org.hamcrest:hamcrest-core:1.3-redhat-1",
+      "scopes" : [ "test" ]
+    }, {
+      "type" : "jar",
+      "sha1" : "06e9f19f455262cd8fb3f18c87c820cbb4d351a7",
+      "md5" : "c28c403eb19147c80afc592cda1f0bb1",
+      "id" : "org.jbpm:jbpm-case-mgmt-api:7.39.0.Final-redhat-00005",
+      "scopes" : [ "test" ]
+    }, {
+      "type" : "jar",
+      "sha1" : "fb92eabbf2ada8cf43590166c027058ec0d0ccfa",
+      "md5" : "a89d8a3f16bd8f01e082a2f4e9bb8856",
+      "id" : "org.jsoup:jsoup:1.8.3.redhat-2",
+      "scopes" : [ "test" ]
+    }, {
+      "type" : "jar",
+      "sha1" : "b4522ff1caae9bd0ac3e5ec547314e92eaada441",
+      "md5" : "35f4040f1bad9849341dc8e607c9ec3f",
+      "id" : "org.hibernate:hibernate-core:5.3.16.Final-redhat-00002",
+      "scopes" : [ "test" ]
+    }, {
+      "type" : "jar",
+      "sha1" : "53a078efeb50a0a8ab80c2eb3ecf83219d64008c",
+      "md5" : "89c4b19e736d28c747913784f0841008",
+      "id" : "org.powermock:powermock-module-junit4-common:1.7.4",
+      "scopes" : [ "test" ]
+    }, {
+      "type" : "jar",
+      "sha1" : "62af6f63ba24b46c4ef59a750cd52afcd6252d15",
+      "md5" : "2225bcff1e1ca57af7029e3b16928498",
+      "id" : "org.eclipse.sisu:org.eclipse.sisu.inject:0.3.2.redhat-00002",
+      "scopes" : [ "test" ]
+    }, {
+      "type" : "jar",
+      "sha1" : "a6cece6a06e0f08e542b41d3b77aa939b44db21e",
+      "md5" : "2ba1e5e84c7b1f6518e3567d8b74482a",
+      "id" : "org.apache.maven.wagon:wagon-http-shared:3.0.0.redhat-2",
+      "scopes" : [ "test" ]
+    }, {
+      "type" : "jar",
+      "sha1" : "87c0ea803b69252868d09308b4618f766f135a96",
+      "md5" : "32ccb1d20a42b5aaaceb90c9082a2efa",
+      "id" : "org.objenesis:objenesis:2.1",
+      "scopes" : [ "test" ]
+    }, {
+      "type" : "jar",
+      "sha1" : "dad8662045966d139a151600e1b6174f084d0922",
+      "md5" : "63b615ec22e36d2bd2500c244e989178",
+      "id" : "org.apache.maven:maven-model:3.3.9.redhat-2",
+      "scopes" : [ "test" ]
+    }, {
+      "type" : "jar",
+      "sha1" : "2f79ce9bb5d594de02e7b6dff6fff17bfd29e245",
+      "md5" : "b16d87c682f4e3233db079335a96c17a",
+      "id" : "org.antlr:antlr-runtime:3.5.2.redhat-1",
+      "scopes" : [ "provided" ]
+    }, {
+      "type" : "jar",
+      "sha1" : "52be468486eb78201f91ea87b7dfc7ea5e45bdc3",
+      "md5" : "a8d56e66b8b43cbbdb61055f05664ff5",
+      "id" : "org.kie:kie-dmn-feel:7.39.0.Final-redhat-00005",
+      "scopes" : [ "provided" ]
+    }, {
+      "type" : "jar",
+      "sha1" : "ae9398856e5264c0742227b9db3a395a753d9aaf",
+      "md5" : "b3551c51cf2f539722a22d18a2fcc63f",
+      "id" : "org.powermock:powermock-api-mockito:1.7.4",
+      "scopes" : [ "test" ]
+    }, {
+      "type" : "jar",
+      "sha1" : "c919ad5f4a89ae58ee34bc9a7cf69ea3db9d13ba",
+      "md5" : "704c1cbd2b4b74981accad0b682efc34",
+      "id" : "org.kie.soup:kie-soup-project-datamodel-api:7.39.0.Final-redhat-00005",
+      "scopes" : [ "provided" ]
+    }, {
+      "type" : "jar",
+      "sha1" : "e4ffefd303134bc9bb90df049f0b25de98354d30",
+      "md5" : "80872c80bb05a2dbdc1db9c4639e7086",
+      "id" : "com.h2database:h2:1.3.173.redhat-2",
+      "scopes" : [ "test" ]
+    }, {
+      "type" : "jar",
+      "sha1" : "ce5be7da2e442c25ec14c766cb60cb802741727b",
+      "md5" : "3f278f148c5d27dc608c25cb7d093b94",
+      "id" : "org.glassfish.jaxb:txw2:2.3.2",
+      "scopes" : [ "test" ]
+    }, {
+      "type" : "jar",
+      "sha1" : "95b0b65105ace4e44045ffb05d624057dcb058e2",
+      "md5" : "57ec551a3befe5354f9d308d6d01083c",
+      "id" : "org.drools:drools-persistence-api:7.39.0.Final-redhat-00005",
+      "scopes" : [ "provided" ]
+    }, {
+      "type" : "jar",
+      "sha1" : "28f1bf56761d92a806403eb440aa63e70c128769",
+      "md5" : "eaea56c259d1be1218cb7b3fbe168d81",
+      "id" : "org.kie.soup:kie-soup-commons:7.39.0.Final-redhat-00005",
+      "scopes" : [ "provided" ]
+    }, {
+      "type" : "jar",
+      "sha1" : "2973d150c0dc1fefe998f834810d68f278ea58ec",
+      "md5" : "5b38c40c97fbd0adee29f91e60405584",
+      "id" : "junit:junit:4.12",
+      "scopes" : [ "test" ]
+    }, {
+      "type" : "jar",
+      "sha1" : "364e177c845547eca55ed9ab77c40080194d8201",
+      "md5" : "3ab8d46f5ab21f792c106a4df9b3cfac",
+      "id" : "org.jboss:jandex:2.1.1.Final-redhat-00001",
+      "scopes" : [ "test" ]
+    }, {
+      "type" : "jar",
+      "sha1" : "47b6cbe0ff93e6235be7fb7e9abd287419c4b289",
+      "md5" : "720cf99b2eaf864643168b146051365a",
+      "id" : "org.drools:drools-core-dynamic:7.39.0.Final-redhat-00005",
+      "scopes" : [ "provided" ]
+    }, {
+      "type" : "jar",
+      "sha1" : "6a18346f8c2b002603339d7a35e7ed7a3729104b",
+      "md5" : "5819af7811c929868ade030f04bcdefb",
+      "id" : "org.jbpm:jbpm-human-task-workitems:7.39.0.Final-redhat-00005",
+      "scopes" : [ "test" ]
+    }, {
+      "type" : "jar",
+      "sha1" : "5572ef0f81e7ca0616741314287fe72d1b44a1d3",
+      "md5" : "e2a096a38ea30b9827d2d5898dadfc0c",
+      "id" : "org.jboss:jboss-transaction-spi:7.6.0.Final-redhat-1",
+      "scopes" : [ "test" ]
+    }, {
+      "type" : "jar",
+      "sha1" : "7e8585f9263ae7190ffb2b2f64ea06a2d8976d2d",
+      "md5" : "03a9487bee4332585ab9d5c5d01a713d",
+      "id" : "org.sonatype.plexus:plexus-cipher:1.7.0.redhat-1",
+      "scopes" : [ "test" ]
+    }, {
+      "type" : "jar",
+      "sha1" : "841ba39f8ac5736449d6e649a0b42f3c4c8a2b9e",
+      "md5" : "9d0d56bdcc46ae168a12386a9de70f82",
+      "id" : "org.drools:drools-ruleunit:7.39.0.Final-redhat-00005",
+      "scopes" : [ "provided" ]
+    }, {
+      "type" : "jar",
+      "sha1" : "df75a695bed1f6a18596493a6643ce8c259ac781",
+      "md5" : "ce38356d9446018b9dd3bdf9816a15cc",
+      "id" : "org.jboss.spec.javax.annotation:jboss-annotations-api_1.2_spec:1.0.0.Final-redhat-1",
+      "scopes" : [ "test" ]
+    }, {
+      "type" : "jar",
+      "sha1" : "2f41436adb4ae199cba5d07228d1c67a65a6ff76",
+      "md5" : "53ad95465be59cc661e7fac9bc6c7b4c",
+      "id" : "org.jbpm:jbpm-audit:7.39.0.Final-redhat-00005",
+      "scopes" : [ "provided" ]
+    }, {
+      "type" : "jar",
+      "sha1" : "764f26e0ab13a87c48fe55f525dfb6a133b7a92f",
+      "md5" : "2a32677a099da7c5b9b2b39c066f2cc6",
+      "id" : "org.codehaus.plexus:plexus-utils:3.0.22",
+      "scopes" : [ "test" ]
+    }, {
+      "type" : "jar",
+      "sha1" : "b5ab4ed13ba1acc28719691b1c5f950dfd99f150",
+      "md5" : "b9d43ef33ae3ca88c790868b634a20ea",
+      "id" : "antlr:antlr:2.7.7.redhat-7",
+      "scopes" : [ "test" ]
+    } ]
+  } ],
+  "governance" : {
+    "blackDuckProperties" : {
+      "runChecks" : false,
+      "includePublishedArtifacts" : false,
+      "autoCreateMissingComponentRequests" : false,
+      "autoDiscardStaleComponentRequests" : false
+    }
+  }
+}
