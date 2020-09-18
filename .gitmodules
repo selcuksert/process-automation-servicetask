@@ -1,0 +1,3 @@
+[submodule "process-automation-servicetask-repo"]
+	path = process-automation-servicetask-repo
+	url = https://github.com/selcuksert/process-automation-servicetask-repo
