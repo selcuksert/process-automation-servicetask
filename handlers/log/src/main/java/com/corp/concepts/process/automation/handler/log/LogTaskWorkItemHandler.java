@@ -15,15 +15,11 @@
  */
 package com.corp.concepts.process.automation.handler.log;
 
-import java.util.HashMap;
-import java.util.Map;
-
 import org.jbpm.process.workitem.core.AbstractLogOrThrowWorkItemHandler;
 import org.jbpm.process.workitem.core.util.RequiredParameterValidator;
 import org.jbpm.process.workitem.core.util.Wid;
 import org.jbpm.process.workitem.core.util.WidMavenDepends;
 import org.jbpm.process.workitem.core.util.WidParameter;
-import org.jbpm.process.workitem.core.util.WidResult;
 import org.jbpm.process.workitem.core.util.service.WidAction;
 import org.jbpm.process.workitem.core.util.service.WidService;
 import org.kie.api.runtime.process.WorkItem;
@@ -40,16 +36,15 @@ import com.fasterxml.jackson.databind.ObjectWriter;
         defaultHandler="mvel: new com.corp.concepts.process.automation.handler.log.LogTaskWorkItemHandler()",
         documentation = "log/index.html",
         category = "${artifactId}",
-        icon = "icon.png",
+        icon = "CustomLogTask.png",
         parameters={
             @WidParameter(name="dataToLog"),
             @WidParameter(name="prettyPrint")
         },
         results={
-            @WidResult(name="data")
         },
         mavenDepends={
-                @WidMavenDepends(group = "${groupId}", artifact = "${artifactId}", version = "${version}")
+            @WidMavenDepends(group = "${groupId}", artifact = "${artifactId}", version = "${version}")
         },
         serviceInfo = @WidService(category = "${artifactId}", description = "${description}",
                 keywords = "Log, Slf4j",
@@ -61,7 +56,6 @@ public class LogTaskWorkItemHandler extends AbstractLogOrThrowWorkItemHandler {
 	private static final Logger logger = LoggerFactory.getLogger(LogTaskWorkItemHandler.class);
 	private static final String DATA_TO_LOG = "dataToLog";
 	private static final String PRETTY_PRINT = "prettyPrint";
-	private static final String DATA = "data";
 
 	public void executeWorkItem(WorkItem workItem, WorkItemManager manager) {
 		try {
@@ -87,13 +81,9 @@ public class LogTaskWorkItemHandler extends AbstractLogOrThrowWorkItemHandler {
 
 			String dataAsStr = objectWriter.writeValueAsString(dataToLog);
 
-			logger.info(String.format("Data:\n %s", dataAsStr));
+			logger.info(String.format("[%s-%d] Data:\n %s", workItem.getName(), workItem.getId(), dataAsStr));
 
-			// return data as-is
-			Map<String, Object> results = new HashMap<String, Object>();
-			results.put(DATA, dataToLog);
-
-			manager.completeWorkItem(workItem.getId(), results);
+			manager.completeWorkItem(workItem.getId(), null);
 		} catch (Throwable cause) {
 			handleException(cause);
 		}
@@ -101,6 +91,6 @@ public class LogTaskWorkItemHandler extends AbstractLogOrThrowWorkItemHandler {
 
 	@Override
 	public void abortWorkItem(WorkItem workItem, WorkItemManager manager) {
-		// Do nothing, this work item cannot be aborted
+		logger.error(workItem.getName() + " aborted.");
 	}
 }
