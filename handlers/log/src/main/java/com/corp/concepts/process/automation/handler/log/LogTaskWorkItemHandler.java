@@ -73,6 +73,7 @@ public class LogTaskWorkItemHandler extends AbstractLogOrThrowWorkItemHandler {
 
 			if (dataToLog == null) {
 				logger.error("No data to log is provided!");
+				manager.abortWorkItem(workItem.getId());
 				return;
 			}
 
