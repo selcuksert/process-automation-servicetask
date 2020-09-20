@@ -69,4 +69,5 @@ The sample project set following parameters:
 |Method|String|GET|
 |ResultClass|String|[com.corp.todo.Task](/handlers/mysql/src/main/java/com/corp/concepts/process/automation/handler/mysql/model/Task.java)|
 |Url|String|https://jsonplaceholder.typicode.com/todos/#{taskId}|
+
 *One can directly access to any process data variable using #{paramName}*
