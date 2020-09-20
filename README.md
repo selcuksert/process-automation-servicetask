@@ -98,9 +98,9 @@ The sample project set following parameters (Click on service task -> Properties
 ![mysql_params](/doc/images/mysql_params.png)
 | Name | Data Type | Source |
 |:-----|:----------|:-------|
-|username|String|<MySQL DB Username>|
-|password|String|<MySQL DB Password>|
-|url|String|<MySQL JDBC URL>|
+|username|String|`MySQL DB Username`|
+|password|String|`MySQL DB Password`|
+|url|String|`jdbc:mysql://{host}:{port}/{dbName}`|
 |taskToInsert|Object|response|
 
 | Name | Data Type | Target |
