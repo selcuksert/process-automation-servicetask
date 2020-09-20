@@ -10,4 +10,7 @@ This project implements a sample BPM project on RHPAM that uses 3 service tasks:
 
 ![BPMN diagram](/doc/images/evaluation.bpmn.png)
 
-## Steps to Activate
+## Service Task Implementations
+The two [custom service task types](/handlers) were implemented using KIE Java API which are essentially `WorkItemHandler`s. Due to their nature they are customizable and re-usable throughout processes and projects in Business Central. In order to use them you need to import packaged versions of them (JAR files) and enable them in Business Central.
+
+
