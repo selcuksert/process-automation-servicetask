@@ -100,9 +100,36 @@ The sample project set following parameters (Click on service task -> Properties
 |:-----|:----------|:-------|
 |username|String|`MySQL DB Username`|
 |password|String|`MySQL DB Password`|
-|url|String|`jdbc:mysql://{host}:{port}/{dbName}`|
+|url|String|`jdbc:mysql://${host}:${port}/{dbName}`|
 |taskToInsert|Object|response|
 
 | Name | Data Type | Target |
 |:-----|:----------|:-------|
 |completed|String|insertResult|
+
+## Triggering the Process
+The Business Central comes with Swagger Web Interface (default URL: http(s)://${BC_HOST}:${BC_PORT}/kie-server/docs). For details please refer to the [official documentation](https://access.redhat.com/documentation/en-us/red_hat_process_automation_manager/7.8/html-single/interacting_with_red_hat_process_automation_manager_using_kie_apis/index).
+
+After successfully build and deploy the project to KIE server one can use POST endpoint `/server/containers/{containerId}/processes/{processId}/instances` under *Process Instances* group to trigger the process:
+| | |
+|:-----|:----------|
+|![kie-server](/doc/images/kie-server.png)|![swagger](/doc/images/swagger.png)|
+
+The endpoint requires two parameters:
+* `container id` where the process definition resides
+* `process id` that new instance should be created from
+
+These two parameters can be retrieved via process definition page:
+| | |
+|:-----|:----------|
+|![process_def](/doc/images/process_def.png)|![process_def_det](/doc/images/process_def_det.png)|
+
+The body of the post request is the taskId (recall process data that we use in API URL):
+```json
+{
+  "taskId":#
+}
+```
+
+The result of the API call is the ID of initiated process:
+![swagger_result](/doc/images/swagger_result.png)
