@@ -20,7 +20,7 @@ mvn clean package deploy
 The resultant JAR file in `target` folder of project is the packaged version that can be imported to Business Central. 
 
 ## Importing Custom Service Tasks
-In order to activate custom service tasks (**CustomLogTask**, **MySQLTask**) in Business Central you should follow the procedure set (Chapter 1 - Procedures 1-4) in [official documentation](https://access.redhat.com/documentation/en-us/red_hat_process_automation_manager/7.8/html-single/custom_tasks_and_work_item_handlers_in_business_central/index#manage-service-tasks-proc_custom-tasks):
+In order to activate custom service tasks (**CustomLogTask**, **MySQLTask**) in Business Central you should follow the procedure set (Chapter 1 - Procedures 1->4) in [official documentation](https://access.redhat.com/documentation/en-us/red_hat_process_automation_manager/7.8/html-single/custom_tasks_and_work_item_handlers_in_business_central/index#manage-service-tasks-proc_custom-tasks):
 | | |
 |:-------------------------:|:-------------------------:|
 |![import_st_c](/doc/images/service_task_c_file.png)|![import_st_u](/doc/images/service_task_u_file.png)|
@@ -29,3 +29,12 @@ In order to activate custom service tasks (**CustomLogTask**, **MySQLTask**) in 
 Then you need to activate them via ON/OFF switch right hand side of imported ones:
 ![service_task_list](/doc/images/service_task_list.png)
 
+## Importing Sample Business Process Project
+There also exists a [business project](https://github.com/selcuksert/process-automation-servicetask-repo) which uses custom service tasks mentioned here. For a quick start you can directly import the project into Business Central just using Import Project button with setting the repository URL (https://github.com/selcuksert/process-automation-servicetask-repo) in your designated space:
+| | |
+|:----:|:----:|
+|![import_p](/doc/images/import_project.png)|![import_c](/doc/images/import_project_c.png)|
+
+## Activating Service Tasks for Project
+The procedure set (Chapter 1 - Procedures 6->10) in [official documentation](https://access.redhat.com/documentation/en-us/red_hat_process_automation_manager/7.8/html-single/custom_tasks_and_work_item_handlers_in_business_central/index#manage-service-tasks-proc_custom-tasks) need to be applied to activate service tasks for any business process project. For the sample project we need *Rest, CustomLogTask, MySQLTask* to be installed:
+![st_project_install](/doc/images/st_project_install.png)
