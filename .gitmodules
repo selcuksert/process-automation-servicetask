@@ -1,3 +1,6 @@
 [submodule "process-automation-servicetask-repo"]
 	path = process-automation-servicetask-repo
 	url = https://github.com/selcuksert/process-automation-servicetask-repo
+[submodule "docker-images"]
+	path = docker-images
+	url = https://github.com/selcuksert/docker-images
