@@ -116,8 +116,8 @@ After successfully build and deploy the project to KIE server one can use POST e
 |![kie-server](/doc/images/kie-server.png)|![swagger](/doc/images/swagger.png)|
 
 The endpoint requires two parameters:
-* `container id` where the process definition resides
-* `process id` that new instance should be created from
+* `container id` where the process definition resides -> Deployment
+* `process id` that new instance should be created from -> Definition Id
 
 These two parameters can be retrieved via process definition page:
 | | |
