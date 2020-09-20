@@ -3,7 +3,7 @@ RedHat Process Automation Manager (RHPAM) provides the ability to integrate/util
 
 For details, please check [official](https://access.redhat.com/documentation/en-us/red_hat_process_automation_manager/7.8/html-single/custom_tasks_and_work_item_handlers_in_business_central/index) documentation.
 
-## Task Completion Evaluation Process
+## Task Evaluation Process
 This project implements a sample BPM project on RHPAM that uses 3 service tasks:
 * REST Service Task: Built-in service task that is used to call a test API of [JSONPlaceholder](http://jsonplaceholder.typicode.com/)
 * Logger Service Task: Custom service task implementation that logs input data as JSON using [SLF4J](http://www.slf4j.org/) and [Jackson ObjectMapper](https://github.com/FasterXML/jackson-databind/blob/master/src/main/java/com/fasterxml/jackson/databind/ObjectMapper.java).
