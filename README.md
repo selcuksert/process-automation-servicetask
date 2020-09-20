@@ -58,3 +58,15 @@ Based on their implementations service tasks need input and output parameters fo
 The [official documentation (a bit out-dated)](https://access.redhat.com/documentation/en-us/red_hat_jboss_bpm_suite/6.4/html/user_guide/rest_task) contains details on REST Service Task. It is also possible to derive information on input/output parameters and processing logic from WIH implementation class [`RESTWorkItemHandler.java`](https://github.com/kiegroup/jbpm/blob/master/jbpm-workitems/jbpm-workitems-rest/src/main/java/org/jbpm/process/workitem/rest/RESTWorkItemHandler.java).
 
 The sample project set following parameters:
+![rest_st_params](/doc/images/rest_st_params.png)
+| Name | Data Type | Source |
+|------|-----------|--------|
+|AcceptCharset|String|UTF-8|
+|AcceptHeader|String|application/json|
+|ContentType|String|application/json|
+|ContentTypeCharset|String|UTF-8|
+|HandleResponseErrors|String|true|
+|Method|String|GET|
+|ResultClass|String|[com.corp.todo.Task](/handlers/mysql/src/main/java/com/corp/concepts/process/automation/handler/mysql/model/Task.java)|
+|Url|String|https://jsonplaceholder.typicode.com/todos/#{taskId}|
+*One can directly access to any process data variable using #{paramName}*
