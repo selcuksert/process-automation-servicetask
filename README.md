@@ -134,6 +134,15 @@ The body of the post request is the taskId (recall process data that we use in A
 The result of the API call is the ID of initiated process:
 ![swagger_result](/doc/images/swagger_result.png)
 
+## The conditions on Exclusive Gateway
+An Exclusive Gateway (or XOR Gateway) joins alternative paths within a Process flow. The flow continues through only one of the paths that satisfies condition set on it. 
+![exc_gw](/doc/images/exc_gw.png)
+
+The sample project joins two paths on an Exclusive Gateway with following conditions:
+| | |
+|:-----|:-----|
+|![exc_gw_comp](/doc/images/exc_gw_comp.png)|![exc_gw_not_comp](/doc/images/exc_gw_not_comp.png)|
+
 ## Result of the Process Execution
 The sample project has a business process design that persists data of given task ID to designated MySQL DB if it is **completed**.
 
