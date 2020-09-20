@@ -56,7 +56,7 @@ Based on their implementations service tasks need input and output parameters fo
 ### REST Service Task
 The [official documentation (a bit out-dated)](https://access.redhat.com/documentation/en-us/red_hat_jboss_bpm_suite/6.4/html/user_guide/rest_task) contains details on REST Service Task. It is also possible to derive information on input/output parameters and processing logic from WIH implementation class [`RESTWorkItemHandler.java`](https://github.com/kiegroup/jbpm/blob/master/jbpm-workitems/jbpm-workitems-rest/src/main/java/org/jbpm/process/workitem/rest/RESTWorkItemHandler.java).
 
-The sample project set following parameters (Click on service task -> Properties -> Data Assignments):
+The sample project set following parameters (Click on service task -> Properties (Pen icon right hand side) -> Data Assignments):
 ![rest_st_params](/doc/images/rest_st_params.png)
 | Name | Data Type | Source |
 |:-----|:----------|:-------|
@@ -76,4 +76,20 @@ The sample project set following parameters (Click on service task -> Properties
 *One can directly access to any process data variable using `#{paramName.fieldName}`*
 
 ### Log Service Task
-The sample project set following parameters (Click on service task -> Properties -> Data Assignments):
+The sample project set following parameters (Click on service task -> Properties (Pen icon right hand side) -> Data Assignments):
+| | |
+|:---:|:---:|
+|![log_completed](/doc/images/log_completed.png)|![log_not_completed](/doc/images/log_not_completed.png)|
+|![log_rest](/doc/images/log_rest.png)|![log_insert](/doc/images/log_insert.png)|
+
+|Task| Name | Data Type | Source |
+|:----|:----|:---|:---|
+|Completed|dataToLog|Object|#{response.completed}|
+|Completed|prettyPrint|String|true|
+|Not Completed|dataToLog|Object|#{response.completed}|
+|Not Completed|prettyPrint|String|true|
+|REST|dataToLog|Object|response|
+|REST|prettyPrint|String|true|
+|Insert|dataToLog|Object|insertResult|
+|Insert|prettyPrint|String|true|
+
