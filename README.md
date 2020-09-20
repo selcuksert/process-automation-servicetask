@@ -133,3 +133,117 @@ The body of the post request is the taskId (recall process data that we use in A
 
 The result of the API call is the ID of initiated process:
 ![swagger_result](/doc/images/swagger_result.png)
+
+## Result of the Process Execution
+The sample project has a business process design that persists data of given task ID to designated MySQL DB if it is **completed**.
+
+### Not Completed Task:
+The external test API returns following data for task [#1](https://jsonplaceholder.typicode.com/todos/1):
+```json
+{
+  "userId": 1,
+  "id": 1,
+  "title": "delectus aut autem",
+  "completed": false
+}
+```
+
+After execution via Swagger UI the stdout log stream of BC server is as follows (the result of custom log service task executions):
+```bash
+curl -X POST "http://localhost:8080/kie-server/services/rest/server/containers/ToDo_1.0.0-SNAPSHOT/processes/ToDo.evaluation/instances" -H "accept: application/json" -H "content-type: application/json" -d "{ \"taskId\": 1}"
+```
+
+```
+redhat-pam     | 20-09-2020 19:07:14,817 INFO  [com.corp.concepts.process.automation.handler.log.LogTaskWorkItemHandler] (default task-34) [CustomLogTask-2] Data:
+redhat-pam     |  {
+redhat-pam     |   "userId" : 1,
+redhat-pam     |   "id" : 1,
+redhat-pam     |   "title" : "delectus aut autem",
+redhat-pam     |   "completed" : false
+redhat-pam     | }
+redhat-pam     | 20-09-2020 19:07:14,836 INFO  [com.corp.concepts.process.automation.handler.log.LogTaskWorkItemHandler] (default task-34) [CustomLogTask-3] Data:
+redhat-pam     |  "false"
+```
+
+The MySQL DB table contains no data:
+```bash
+mysql> use pam;
+Database changed
+mysql> show columns from task;
++-----------+------------+------+-----+---------+-------+
+| Field     | Type       | Null | Key | Default | Extra |
++-----------+------------+------+-----+---------+-------+
+| id        | bigint     | YES  |     | NULL    |       |
+| user_id   | bigint     | YES  |     | NULL    |       |
+| title     | mediumtext | YES  |     | NULL    |       |
+| completed | tinyint(1) | YES  |     | NULL    |       |
++-----------+------------+------+-----+---------+-------+
+4 rows in set (0.01 sec)
+
+mysql> select * from task;
+Empty set (0.00 sec)
+```
+
+### Completed Task:
+The external test API returns following data for task [#44](https://jsonplaceholder.typicode.com/todos/44):
+```json
+{
+  "userId": 3,
+  "id": 44,
+  "title": "cum debitis quis accusamus doloremque ipsa natus sapiente omnis",
+  "completed": true
+}
+```
+
+After execution via Swagger UI the stdout log stream of BC server is as follows (the result of custom log service task executions):
+```bash
+curl -X POST "http://localhost:8080/kie-server/services/rest/server/containers/ToDo_1.0.0-SNAPSHOT/processes/ToDo.evaluation/instances" -H "accept: application/json" -H "content-type: application/json" -d "{ \"taskId\": 44}"
+```
+
+```
+redhat-pam     | 20-09-2020 19:07:14,817 INFO  [com.corp.concepts.process.automation.handler.log.LogTaskWorkItemHandler] (default task-34) [CustomLogTask-2] Data:
+redhat-pam     |  {
+redhat-pam     |   "userId" : 1,
+redhat-pam     |   "id" : 1,
+redhat-pam     |   "title" : "delectus aut autem",
+redhat-pam     |   "completed" : false
+redhat-pam     | }
+redhat-pam     | 20-09-2020 19:07:14,836 INFO  [com.corp.concepts.process.automation.handler.log.LogTaskWorkItemHandler] (default task-34) [CustomLogTask-3] Data:
+redhat-pam     |  "false"
+redhat-pam     | 20-09-2020 19:26:18,417 INFO  [com.corp.concepts.process.automation.handler.log.LogTaskWorkItemHandler] (default task-34) [CustomLogTask-5] Data:
+redhat-pam     |  {
+redhat-pam     |   "userId" : 3,
+redhat-pam     |   "id" : 44,
+redhat-pam     |   "title" : "cum debitis quis accusamus doloremque ipsa natus sapiente omnis",
+redhat-pam     |   "completed" : true
+redhat-pam     | }
+redhat-pam     | 20-09-2020 19:26:18,438 INFO  [com.corp.concepts.process.automation.handler.log.LogTaskWorkItemHandler] (default task-34) [CustomLogTask-6] Data:
+redhat-pam     |  "true"
+redhat-pam     | 20-09-2020 19:26:18,786 INFO  [com.corp.concepts.process.automation.handler.mysql.MySQLWorkItemHandler] (default task-34) Insert statement: com.mysql.jdbc.JDBC42PreparedStatement@3224a981: insert into task (completed,user_id,title,id) values (1,3,'cum debitis quis accusamus doloremque ipsa natus sapiente omnis',44)
+redhat-pam     | 20-09-2020 19:26:18,803 INFO  [com.corp.concepts.process.automation.handler.log.LogTaskWorkItemHandler] (default task-34) [CustomLogTask-8] Data:
+redhat-pam     |  true
+```
+
+The MySQL DB table contains no data:
+```bash
+mysql> use pam;
+Database changed
+mysql> show columns from task;
++-----------+------------+------+-----+---------+-------+
+| Field     | Type       | Null | Key | Default | Extra |
++-----------+------------+------+-----+---------+-------+
+| id        | bigint     | YES  |     | NULL    |       |
+| user_id   | bigint     | YES  |     | NULL    |       |
+| title     | mediumtext | YES  |     | NULL    |       |
+| completed | tinyint(1) | YES  |     | NULL    |       |
++-----------+------------+------+-----+---------+-------+
+4 rows in set (0.01 sec)
+
+mysql> select * from task;
++------+---------+-----------------------------------------------------------------+-----------+
+| id   | user_id | title                                                           | completed |
++------+---------+-----------------------------------------------------------------+-----------+
+|   44 |       3 | cum debitis quis accusamus doloremque ipsa natus sapiente omnis |         1 |
++------+---------+-----------------------------------------------------------------+-----------+
+1 row in set (0.00 sec)
+```
