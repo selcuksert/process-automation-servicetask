@@ -48,7 +48,7 @@ It is also important to note that in deployment settings (MVEL) we need to pass 
 Based on their implementations service tasks need input and output parameters for their own processing. The sample project also needs some process parameters (bpmn file view -> properties -> Process Data):
 ![process_variables](/doc/images/process_variables.png)
 | Name | Data Type |
-|------|-----------|
+|:-----|:----------|
 |taskId|java.lang.Long|
 |response|[com.corp.todo.Task](/handlers/mysql/src/main/java/com/corp/concepts/process/automation/handler/mysql/model/Task.java)|
 |insertResult|String|
@@ -59,7 +59,7 @@ The [official documentation (a bit out-dated)](https://access.redhat.com/documen
 The sample project set following parameters:
 ![rest_st_params](/doc/images/rest_st_params.png)
 | Name | Data Type | Source |
-|------|-----------|--------|
+|:-----|:----------|:-------|
 |AcceptCharset|String|UTF-8|
 |AcceptHeader|String|application/json|
 |ContentType|String|application/json|
@@ -70,7 +70,7 @@ The sample project set following parameters:
 |Url|String|h<span>ttps://jsonplaceholder.typicode.com/todos/#{taskId}</span>|
 
 | Name | Data Type | Target |
-|------|-----------|--------|
+|:-----|:----------|:-------|
 |Result|[com.corp.todo.Task](/handlers/mysql/src/main/java/com/corp/concepts/process/automation/handler/mysql/model/Task.java)|response|
 
 *One can directly access to any process data variable using `#{paramName.fieldName}`*
