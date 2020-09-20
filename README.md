@@ -37,4 +37,4 @@ There also exists a [business project](https://github.com/selcuksert/process-aut
 
 ## Activating Service Tasks for Project
 The procedure set (Chapter 1 - Procedures 6->10) in [official documentation](https://access.redhat.com/documentation/en-us/red_hat_process_automation_manager/7.8/html-single/custom_tasks_and_work_item_handlers_in_business_central/index#manage-service-tasks-proc_custom-tasks) need to be applied to activate service tasks for any business process project. For the sample project we need *Rest, CustomLogTask, MySQLTask* to be installed:
-![st_project_install](/doc/images/st_project_install.png)
+![st_project_install](/doc/images/st_project_inst.png)
