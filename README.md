@@ -45,13 +45,13 @@ It is also important to note that in deployment settings (MVEL) we need to pass 
 ![project_wih_settings.png](/doc/images/project_wih_settings.png)
 
 ## Service Task Parameters
-Based on their implementations service tasks need input and output parameters for their own processing. The sample project also needs some process parameters (bpmn file view -> properties -> Process Data):
+Based on their implementations service tasks need input and output parameters for their own processing. The sample project also needs some process parameters (.bpmn file view -> properties -> Process Data):
 ![process_variables](/doc/images/process_variables.png)
-| Name | Data Type |
-|:-----|:----------|
-|taskId|java.lang.Long|
-|response|[com.corp.todo.Task](/handlers/mysql/src/main/java/com/corp/concepts/process/automation/handler/mysql/model/Task.java)|
-|insertResult|String|
+| Name | Data Type |Description|
+|:-----|:----------|:----|
+|taskId|java.lang.Long|Process variable to store task ID input of [JSONPlaceholder's ToDo API](http://jsonplaceholder.typicode.com/todos)|
+|response|[com.corp.todo.Task](/handlers/mysql/src/main/java/com/corp/concepts/process/automation/handler/mysql/model/Task.java)|Custom model that aligns with ToDo API task data schema|
+|insertResult|String|SQL statement execution result|
 
 ### REST Service Task
 The [official documentation (a bit out-dated)](https://access.redhat.com/documentation/en-us/red_hat_jboss_bpm_suite/6.4/html/user_guide/rest_task) contains details on REST Service Task. It is also possible to derive information on input/output parameters and processing logic from WIH implementation class [`RESTWorkItemHandler.java`](https://github.com/kiegroup/jbpm/blob/master/jbpm-workitems/jbpm-workitems-rest/src/main/java/org/jbpm/process/workitem/rest/RESTWorkItemHandler.java).
@@ -93,3 +93,16 @@ The sample project set following parameters (Click on service task -> Properties
 |Insert|dataToLog|Object|insertResult|
 |Insert|prettyPrint|String|true|
 
+### MySQL Service Task
+The sample project set following parameters (Click on service task -> Properties (Pen icon right hand side) -> Data Assignments):
+![mysql_params](/doc/images/mysql_params.png)
+| Name | Data Type | Source |
+|:-----|:----------|:-------|
+|username|String|<MySQL DB Username>|
+|password|String|<MySQL DB Password>|
+|url|String|<MySQL JDBC URL>|
+|taskToInsert|Object|response|
+
+| Name | Data Type | Target |
+|:-----|:----------|:-------|
+|completed|String|insertResult|
