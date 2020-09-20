@@ -1,5 +1,5 @@
 # ToDo List Evaluation Process
-RedHat Process Automation Manager (RHPAM) provides the ability to integrate/utilize different technologies with built-in service tasks. It is also possible to implement custom service tasks where the out-of-box capabilities does not fulfill the needs. To implement a custom service task one needs to implement `org.kie.api.runtime.process.WorkItemHandler` interface of KIE API. 
+RedHat Process Automation Manager (RHPAM) provides the ability to integrate/utilize different technologies with built-in service tasks. It is also possible to implement custom service tasks where out-of-box capabilities do not fulfill the needs. To implement a custom service task one needs to implement `org.kie.api.runtime.process.WorkItemHandler` interface of KIE API. 
 
 For details, please check [official documentation](https://access.redhat.com/documentation/en-us/red_hat_process_automation_manager/7.8/html-single/custom_tasks_and_work_item_handlers_in_business_central/index).
 
@@ -37,4 +37,24 @@ There also exists a [business project](https://github.com/selcuksert/process-aut
 
 ## Activating Service Tasks for Project
 The procedure set (Chapter 1 - Procedures 6->10) in [official documentation](https://access.redhat.com/documentation/en-us/red_hat_process_automation_manager/7.8/html-single/custom_tasks_and_work_item_handlers_in_business_central/index#manage-service-tasks-proc_custom-tasks) need to be applied to activate service tasks for any business process project. For the sample project we need *Rest, CustomLogTask, MySQLTask* to be installed:
-![st_project_install](/doc/images/st_project_inst.png)
+| | |
+|:-------------------------:|:-------------------------:|
+![st_project_install](/doc/images/st_project_inst.png) |![project_st_list](/doc/images/project_st_list.png)
+
+It is also important to note that in deployment settings (MVEL) we need to pass `classLoader` parameter to constructor of WorkItemHandler classes of *Rest, MySQLTask* tasks as KIE classloader needs to be in action to avoid `ClassNotFound` exceptions during process execution:
+![project_wih_settings.png](/doc/images/project_wih_settings.png)
+
+## Service Task Parameters
+Based on their implementations service tasks need input and output parameters for their own processing. The sample project also needs some process parameters (bpmn file view -> properties -> Process Data):
+![process_variables](/doc/images/process_variables.png)
+| Name | Data Type |
+|------|-----------|
+|taskId|java.lang.Long|
+|response|[com.corp.todo.Task](/handlers/mysql/src/main/java/com/corp/concepts/process/automation/handler/mysql/model/Task.java)|
+|insertResult|String|
+
+
+### REST Service Task
+The [official documentation (a bit out-dated)](https://access.redhat.com/documentation/en-us/red_hat_jboss_bpm_suite/6.4/html/user_guide/rest_task) contains details on REST Service Task. It is also possible to derive information on input/output parameters and processing logic from WIH implementation class [`RESTWorkItemHandler.java`](https://github.com/kiegroup/jbpm/blob/master/jbpm-workitems/jbpm-workitems-rest/src/main/java/org/jbpm/process/workitem/rest/RESTWorkItemHandler.java).
+
+The sample project set following parameters:
