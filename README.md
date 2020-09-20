@@ -224,7 +224,7 @@ redhat-pam     | 20-09-2020 19:26:18,803 INFO  [com.corp.concepts.process.automa
 redhat-pam     |  true
 ```
 
-The MySQL DB table contains no data:
+The MySQL DB table contains data of related task:
 ```bash
 mysql> use pam;
 Database changed
