@@ -247,3 +247,10 @@ mysql> select * from task;
 +------+---------+-----------------------------------------------------------------+-----------+
 1 row in set (0.00 sec)
 ```
+
+## Docker
+The sample project uses Docker images from [docker-images](https://github.com/selcuksert/docker-images) repository:
+```bash
+docker-compose -f ./docker-images/redhat/pam/docker-compose.yml mysql pam openldap mavenserver
+```
+
