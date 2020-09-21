@@ -19,6 +19,15 @@ import java.sql.JDBCType;
 
 import com.corp.concepts.process.automation.handler.mysql.annotation.Field;
 
+/**
+ * Model that aligns with API call result data schema.
+ * In case of any schema change just annotate relevant getter using {@link Field}
+ * annotation with setting appropriate name and {@link JDBCType} setting.
+ *  
+ * @author Selcuk SERT - {@code selcuk.sert@gmail.com}
+ * @see {@link Field}
+ *
+ */
 public class Task {
 	Long id;
 	Long userId;

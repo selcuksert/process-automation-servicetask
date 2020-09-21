@@ -23,6 +23,14 @@ import java.lang.annotation.Retention;
 import java.lang.annotation.Target;
 import java.sql.JDBCType;
 
+/**
+ * Annotation to enable automatic prepared statement generation.
+ * It needs corresponding {@code name} and {@code type} 
+ * ({@link JDBCType}) of DB table column where relevant field is persisted. 
+ * 
+ * @author Selcuk SERT - {@code selcuk.sert@gmail.com}
+ *
+ */
 @Documented
 @Retention(RUNTIME)
 @Target(METHOD)

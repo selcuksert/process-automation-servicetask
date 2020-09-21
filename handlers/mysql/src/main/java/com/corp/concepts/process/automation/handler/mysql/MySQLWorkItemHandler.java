@@ -44,6 +44,12 @@ import com.corp.concepts.process.automation.handler.mysql.model.Task;
 import com.fasterxml.jackson.databind.DeserializationFeature;
 import com.fasterxml.jackson.databind.ObjectMapper;
 
+/**
+ * Custom WorkItemHandler for MySQLTask
+ * 
+ * @author Selcuk SERT - {@code selcuk.sert@gmail.com}
+ *
+ */
 //@formatter:off
 @Wid(widfile="MySQLTask.wid", name="MySQLTask",
         displayName="MySQLTask",
@@ -137,10 +143,6 @@ public class MySQLWorkItemHandler extends AbstractLogOrThrowWorkItemHandler {
 		Connection connection = null;
 		try {
 			connection = DriverManager.getConnection(url, username, password);
-			// ------------------------------------------------------------------
-			// Just modify the content of hash map and Task model in case of
-			// any schema change
-
 			PreparedStatement pStmt = generatePreparedStatement(connection, taskToInsert);
 			pStmt.execute();
 			

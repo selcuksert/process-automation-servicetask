@@ -30,6 +30,12 @@ import org.slf4j.LoggerFactory;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.ObjectWriter;
 
+/**
+ * Custom WorkItemHandler for CustomLogTask
+ * 
+ * @author Selcuk SERT - {@code selcuk.sert@gmail.com}
+ *
+ */
 //@formatter:off
 @Wid(widfile="CustomLogTask.wid", name="CustomLogTask",
         displayName="CustomLogTask",
