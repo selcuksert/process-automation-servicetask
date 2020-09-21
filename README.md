@@ -210,15 +210,6 @@ curl -X POST "http://localhost:8080/kie-server/services/rest/server/containers/T
 ```
 
 ```
-redhat-pam     | 20-09-2020 19:07:14,817 INFO  [com.corp.concepts.process.automation.handler.log.LogTaskWorkItemHandler] (default task-34) [CustomLogTask-2] Data:
-redhat-pam     |  {
-redhat-pam     |   "userId" : 1,
-redhat-pam     |   "id" : 1,
-redhat-pam     |   "title" : "delectus aut autem",
-redhat-pam     |   "completed" : false
-redhat-pam     | }
-redhat-pam     | 20-09-2020 19:07:14,836 INFO  [com.corp.concepts.process.automation.handler.log.LogTaskWorkItemHandler] (default task-34) [CustomLogTask-3] Data:
-redhat-pam     |  "false"
 redhat-pam     | 20-09-2020 19:26:18,417 INFO  [com.corp.concepts.process.automation.handler.log.LogTaskWorkItemHandler] (default task-34) [CustomLogTask-5] Data:
 redhat-pam     |  {
 redhat-pam     |   "userId" : 3,
