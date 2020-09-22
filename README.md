@@ -111,7 +111,7 @@ The sample project set following parameters (Click on service task -> Properties
 The Business Central comes with Swagger Web Interface (default URL: http(s)://${BC_HOST}:${BC_PORT}/kie-server/docs). For details please refer to the [official documentation](https://access.redhat.com/documentation/en-us/red_hat_process_automation_manager/7.8/html-single/interacting_with_red_hat_process_automation_manager_using_kie_apis/index).
 
 After successfully build and deploy the project to KIE server one can use POST endpoint `/server/containers/{containerId}/processes/{processId}/instances` under *Process Instances* group to trigger the process:
-| | |
+| KIE Server Status | Swagger UI |
 |:-----|:----------|
 |![kie-server](/doc/images/kie-server.png)|![swagger](/doc/images/swagger.png)|
 
@@ -120,7 +120,7 @@ The endpoint requires two parameters:
 * `process id` that new instance should be created from -> Definition Id
 
 These two parameters can be retrieved via process definition page:
-| | |
+| Process List | Process Details |
 |:-----|:----------|
 |![process_def](/doc/images/process_def.png)|![process_def_det](/doc/images/process_def_det.png)|
 
@@ -139,7 +139,7 @@ An Exclusive Gateway (or XOR Gateway) joins alternative paths within a Process f
 ![exc_gw](/doc/images/exc_gw.png)
 
 The sample project joins two paths on an Exclusive Gateway with following conditions:
-| | |
+| Completed | Not Completed |
 |:-----|:-----|
 |![exc_gw_comp](/doc/images/exc_gw_comp.png)|![exc_gw_not_comp](/doc/images/exc_gw_not_comp.png)|
 
