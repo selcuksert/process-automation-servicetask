@@ -107,6 +107,21 @@ The sample project set following parameters (Click on service task -> Properties
 |:-----|:----------|:-------|
 |completed|String|insertResult|
 
+You also need to have a table in MySQL with following schema:
+```bash
+mysql> use pam;
+Database changed
+mysql> show columns from task;
++-----------+------------+------+-----+---------+-------+
+| Field     | Type       | Null | Key | Default | Extra |
++-----------+------------+------+-----+---------+-------+
+| id        | bigint     | YES  |     | NULL    |       |
+| user_id   | bigint     | YES  |     | NULL    |       |
+| title     | mediumtext | YES  |     | NULL    |       |
+| completed | tinyint(1) | YES  |     | NULL    |       |
++-----------+------------+------+-----+---------+-------+
+4 rows in set (0.01 sec)
+```
 ## Triggering the Process
 The Business Central comes with Swagger Web Interface (default URL: http(s)://${BC_HOST}:${BC_PORT}/kie-server/docs). For details please refer to the [official documentation](https://access.redhat.com/documentation/en-us/red_hat_process_automation_manager/7.8/html-single/interacting_with_red_hat_process_automation_manager_using_kie_apis/index).
 
@@ -178,16 +193,6 @@ The MySQL DB table contains no data:
 ```bash
 mysql> use pam;
 Database changed
-mysql> show columns from task;
-+-----------+------------+------+-----+---------+-------+
-| Field     | Type       | Null | Key | Default | Extra |
-+-----------+------------+------+-----+---------+-------+
-| id        | bigint     | YES  |     | NULL    |       |
-| user_id   | bigint     | YES  |     | NULL    |       |
-| title     | mediumtext | YES  |     | NULL    |       |
-| completed | tinyint(1) | YES  |     | NULL    |       |
-+-----------+------------+------+-----+---------+-------+
-4 rows in set (0.01 sec)
 
 mysql> select * from task;
 Empty set (0.00 sec)
@@ -228,16 +233,6 @@ The MySQL DB table contains data of related task:
 ```bash
 mysql> use pam;
 Database changed
-mysql> show columns from task;
-+-----------+------------+------+-----+---------+-------+
-| Field     | Type       | Null | Key | Default | Extra |
-+-----------+------------+------+-----+---------+-------+
-| id        | bigint     | YES  |     | NULL    |       |
-| user_id   | bigint     | YES  |     | NULL    |       |
-| title     | mediumtext | YES  |     | NULL    |       |
-| completed | tinyint(1) | YES  |     | NULL    |       |
-+-----------+------------+------+-----+---------+-------+
-4 rows in set (0.01 sec)
 
 mysql> select * from task;
 +------+---------+-----------------------------------------------------------------+-----------+
