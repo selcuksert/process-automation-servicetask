@@ -56,7 +56,7 @@ The sample project needs some process level variables (.bpmn file view -> Proper
 |response|[com.corp.todo.Task](https://github.com/selcuksert/process-automation-servicetask-repo/blob/master/src/main/java/com/corp/todo/Task.java)|Custom model that aligns with ToDo API task data schema|
 |insertResult|String|SQL statement execution result|
 
-The custom model that aligns with the API data schema can easily be added using visual class editor of Business Central:
+The custom model that aligns with the API data schema can easily be added using visual class editor of Business Central (Project Page -> Add Asset -> Data Object):
 ![bc_class_editor](/doc/images/bc_class_editor.png)
 
 ### REST Service Task
