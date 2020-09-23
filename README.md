@@ -11,7 +11,7 @@ This project implements a sample BPM project on RHPAM that uses 3 service tasks:
 ![BPMN diagram](/doc/images/evaluation.bpmn.png)
 
 ## Service Task Implementations
-The two [custom service task types](/handlers) were implemented using KIE Java API which are essentially `WorkItemHandler`s. Due to their nature they are customizable and re-usable throughout processes and projects in Business Central. In order to use them you need to import packaged versions (JAR files) and enable them in Business Central. The [official documentation](https://access.redhat.com/documentation/en-us/red_hat_process_automation_manager/7.8/html-single/custom_tasks_and_work_item_handlers_in_business_central/index) contains relevant details throughout implementation and deployment journeys.
+The two [custom service task types](/handlers) were implemented using KIE Java API which are essentially `WorkItemHandler`s. Due to their nature they are customizable and re-usable throughout processes and projects in Business Central. In order to use them you need to import packaged versions (JAR files) and enable them in Business Central (http(s)://HOST:PORT/business-central). The [official documentation](https://access.redhat.com/documentation/en-us/red_hat_process_automation_manager/7.8/html-single/custom_tasks_and_work_item_handlers_in_business_central/index) contains relevant details throughout implementation and deployment journeys.
 
 The handler implementations in this project can be build and deployed to an artifact server (here docker hosted Artifactory) using following maven goals:
 ```bash
@@ -45,13 +45,19 @@ It is also important to note that in deployment settings (MVEL) we need to pass 
 ![project_wih_settings.png](/doc/images/project_wih_settings.png)
 
 ## Service Task Parameters
-Based on their implementations service tasks need input and output parameters for their own processing. The sample project also needs some process parameters (.bpmn file view -> properties -> Process Data):
+Based on their implementations service tasks need input and output parameters for their own processing. 
+
+### Process Variables
+The sample project needs some process level variables (.bpmn file view -> Properties -> Process Data):
 ![process_variables](/doc/images/process_variables.png)
 | Name | Data Type |Description|
 |:-----|:----------|:----|
 |taskId|java.lang.Long|Process variable to store task ID input of [JSONPlaceholder's ToDo API](http://jsonplaceholder.typicode.com/todos)|
 |response|[com.corp.todo.Task](https://github.com/selcuksert/process-automation-servicetask-repo/blob/master/src/main/java/com/corp/todo/Task.java)|Custom model that aligns with ToDo API task data schema|
 |insertResult|String|SQL statement execution result|
+
+The custom model that aligns with the API data schema can easily be added using visual class editor of Business Central:
+![bc_class_editor](/doc/images/bc_class_editor.png)
 
 ### REST Service Task
 The [official documentation (a bit out-dated)](https://access.redhat.com/documentation/en-us/red_hat_jboss_bpm_suite/6.4/html/user_guide/rest_task) contains details on REST Service Task. It is also possible to derive information on input/output parameters and processing logic from WIH implementation class [`RESTWorkItemHandler.java`](https://github.com/kiegroup/jbpm/blob/master/jbpm-workitems/jbpm-workitems-rest/src/main/java/org/jbpm/process/workitem/rest/RESTWorkItemHandler.java).
