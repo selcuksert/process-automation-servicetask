@@ -50,7 +50,7 @@ Based on their implementations service tasks need input and output parameters fo
 | Name | Data Type |Description|
 |:-----|:----------|:----|
 |taskId|java.lang.Long|Process variable to store task ID input of [JSONPlaceholder's ToDo API](http://jsonplaceholder.typicode.com/todos)|
-|response|[com.corp.todo.Task](/handlers/mysql/src/main/java/com/corp/concepts/process/automation/handler/mysql/model/Task.java)|Custom model that aligns with ToDo API task data schema|
+|response|[com.corp.todo.Task](https://github.com/selcuksert/process-automation-servicetask-repo/blob/master/src/main/java/com/corp/todo/Task.java)|Custom model that aligns with ToDo API task data schema|
 |insertResult|String|SQL statement execution result|
 
 ### REST Service Task
@@ -66,12 +66,12 @@ The sample project set following parameters (Click on service task -> Properties
 |ContentTypeCharset|String|UTF-8|
 |HandleResponseErrors|String|true|
 |Method|String|GET|
-|ResultClass|String|[com.corp.todo.Task](/handlers/mysql/src/main/java/com/corp/concepts/process/automation/handler/mysql/model/Task.java)|
+|ResultClass|String|[com.corp.todo.Task](https://github.com/selcuksert/process-automation-servicetask-repo/blob/master/src/main/java/com/corp/todo/Task.java)|
 |Url|String|h<span>ttps://jsonplaceholder.typicode.com/todos/#{taskId}</span>|
 
 | Name | Data Type | Target |
 |:-----|:----------|:-------|
-|Result|[com.corp.todo.Task](/handlers/mysql/src/main/java/com/corp/concepts/process/automation/handler/mysql/model/Task.java)|response|
+|Result|[com.corp.todo.Task](https://github.com/selcuksert/process-automation-servicetask-repo/blob/master/src/main/java/com/corp/todo/Task.java)|response|
 
 *One can directly access to any process data variable using `#{paramName.fieldName}`*
 
